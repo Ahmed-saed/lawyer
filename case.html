@@ -26,6 +26,10 @@ Author: Ahmed Saeed & Mohamed Sayed
     <link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
     <link href="assets/admin/pages/css/timeline.css" rel="stylesheet" type="text/css" />
+    <link href="assets/global/plugins/dropzone/css/dropzone.css" rel="stylesheet" />
+
+    <link href="assets/global/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+    <link href="assets/admin/pages/css/portfolio.css" rel="stylesheet" type="text/css" />
 
     <!-- END GLOBAL MANDATORY STYLES -->
     <!-- BEGIN THEME STYLES -->
@@ -564,10 +568,188 @@ Author: Ahmed Saeed & Mohamed Sayed
                                             <p>
                                                 Howdy, I'm in Attachments.
                                             </p>
-                                            <p>
-                                                Duis autem vel eum iriure dolor in hendrerit in vulputate. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat
-                                            </p>
-
+                                            <div class="portlet light">
+                                                <div class="portlet-body">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <p>
+                                                                <span class="label label-danger">
+								NOTE: </span> &nbsp; This plugins works only on Latest Chrome, Firefox, Safari, Opera & Internet Explorer 10.
+                                                            </p>
+                                                            <form action="assets/global/plugins/dropzone/upload.php" class="dropzone" id="my-dropzone">
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                	<div class="tab-content">
+                                            <div class="tab-pane active" id="tab_1">
+                                                <!-- BEGIN FILTER -->
+                                                <div class="margin-top-10">
+                                                    <ul class="mix-filter">
+                                                        <li class="filter" data-filter="all">
+                                                            All
+                                                        </li>
+                                                        <li class="filter" data-filter="category_1">
+                                                            UI Design
+                                                        </li>
+                                                        <li class="filter" data-filter="category_2">
+                                                            Web Development
+                                                        </li>
+                                                        <li class="filter" data-filter="category_3">
+                                                            Photography
+                                                        </li>
+                                                        <li class="filter" data-filter="category_3 category_1">
+                                                            Wordpress and Logo
+                                                        </li>
+                                                    </ul>
+                                                    <div class="row mix-grid">
+                                                        <div class="col-md-3 col-sm-4 mix category_1">
+                                                            <div class="mix-inner">
+                                                                <img class="img-responsive" src="assets/admin/pages/media/works/img1.jpg" alt="">
+                                                                <div class="mix-details">
+                                                                    <h4>Cascusamus et iusto odio</h4>
+                                                                    <a class="mix-link">
+                                                                        <i class="fa fa-link"></i>
+                                                                    </a>
+                                                                    <a class="mix-preview fancybox-button" href="assets/admin/pages/media/works/img2.jpg" title="Project Name" data-rel="fancybox-button">
+                                                                        <i class="fa fa-search"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 mix category_2">
+                                                            <div class="mix-inner">
+                                                                <img class="img-responsive" src="assets/admin/pages/media/works/img2.jpg" alt="">
+                                                                <div class="mix-details">
+                                                                    <h4>Cascusamus et iusto accusamus</h4>
+                                                                    <a class="mix-link">
+                                                                        <i class="fa fa-link"></i>
+                                                                    </a>
+                                                                    <a class="mix-preview fancybox-button" href="assets/admin/pages/media/works/img2.jpg" title="Project Name" data-rel="fancybox-button">
+                                                                        <i class="fa fa-search"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 mix category_3">
+                                                            <div class="mix-inner">
+                                                                <img class="img-responsive" src="assets/admin/pages/media/works/img3.jpg" alt="">
+                                                                <div class="mix-details">
+                                                                    <h4>Cascusamus et iusto accusamus</h4>
+                                                                    <a class="mix-link">
+                                                                        <i class="fa fa-link"></i>
+                                                                    </a>
+                                                                    <a class="mix-preview fancybox-button" href="assets/admin/pages/media/works/img3.jpg" title="Project Name" data-rel="fancybox-button">
+                                                                        <i class="fa fa-search"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 mix category_1 category_2">
+                                                            <div class="mix-inner">
+                                                                <img class="img-responsive" src="assets/admin/pages/media/works/img4.jpg" alt="">
+                                                                <div class="mix-details">
+                                                                    <h4>Cascusamus et iusto accusamus</h4>
+                                                                    <a class="mix-link">
+                                                                        <i class="fa fa-link"></i>
+                                                                    </a>
+                                                                    <a class="mix-preview fancybox-button" href="assets/admin/pages/media/works/img4.jpg" title="Project Name" data-rel="fancybox-button">
+                                                                        <i class="fa fa-search"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 mix category_2 category_1">
+                                                            <div class="mix-inner">
+                                                                <img class="img-responsive" src="assets/admin/pages/media/works/img5.jpg" alt="">
+                                                                <div class="mix-details">
+                                                                    <h4>Cascusamus et iusto accusamus</h4>
+                                                                    <a class="mix-link">
+                                                                        <i class="fa fa-link"></i>
+                                                                    </a>
+                                                                    <a class="mix-preview fancybox-button" href="assets/admin/pages/media/works/img5.jpg" title="Project Name" data-rel="fancybox-button">
+                                                                        <i class="fa fa-search"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 mix category_1 category_2">
+                                                            <div class="mix-inner">
+                                                                <img class="img-responsive" src="assets/admin/pages/media/works/img6.jpg" alt="">
+                                                                <div class="mix-details">
+                                                                    <h4>Cascusamus et iusto accusamus</h4>
+                                                                    <a class="mix-link">
+                                                                        <i class="fa fa-link"></i>
+                                                                    </a>
+                                                                    <a class="mix-preview fancybox-button" href="assets/admin/pages/media/works/img6.jpg" title="Project Name" data-rel="fancybox-button">
+                                                                        <i class="fa fa-search"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 mix category_2 category_3">
+                                                            <div class="mix-inner">
+                                                                <img class="img-responsive" src="assets/admin/pages/media/works/img1.jpg" alt="">
+                                                                <div class="mix-details">
+                                                                    <h4>Cascusamus et iusto accusamus</h4>
+                                                                    <a class="mix-link">
+                                                                        <i class="fa fa-link"></i>
+                                                                    </a>
+                                                                    <a class="mix-preview fancybox-button" href="assets/admin/pages/media/works/img1.jpg" title="Project Name" data-rel="fancybox-button">
+                                                                        <i class="fa fa-search"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 mix category_1 category_2">
+                                                            <div class="mix-inner">
+                                                                <img class="img-responsive" src="assets/admin/pages/media/works/img2.jpg" alt="">
+                                                                <div class="mix-details">
+                                                                    <h4>Cascusamus et iusto accusamus</h4>
+                                                                    <a class="mix-link">
+                                                                        <i class="fa fa-link"></i>
+                                                                    </a>
+                                                                    <a class="mix-preview fancybox-button" href="assets/admin/pages/media/works/img2.jpg" title="Project Name" data-rel="fancybox-button">
+                                                                        <i class="fa fa-search"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 mix category_3">
+                                                            <div class="mix-inner">
+                                                                <img class="img-responsive" src="assets/admin/pages/media/works/img4.jpg" alt="">
+                                                                <div class="mix-details">
+                                                                    <h4>Cascusamus et iusto accusamus</h4>
+                                                                    <a class="mix-link">
+                                                                        <i class="fa fa-link"></i>
+                                                                    </a>
+                                                                    <a class="mix-preview fancybox-button" href="assets/admin/pages/media/works/img4.jpg" title="Project Name" data-rel="fancybox-button">
+                                                                        <i class="fa fa-search"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 mix category_1">
+                                                            <div class="mix-inner">
+                                                                <img class="img-responsive" src="assets/admin/pages/media/works/img3.jpg" alt="">
+                                                                <div class="mix-details">
+                                                                    <h4>Cascusamus et iusto accusamus</h4>
+                                                                    <a class="mix-link">
+                                                                        <i class="fa fa-link"></i>
+                                                                    </a>
+                                                                    <a class="mix-preview fancybox-button" href="assets/admin/pages/media/works/img3.jpg" title="Project Name" data-rel="fancybox-button">
+                                                                        <i class="fa fa-search"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- END FILTER -->
+                                            </div>
+                                            </div>
                                         </div>
                                         <div class="tab-pane" id="tab_1_1_7">
                                             <h3>
@@ -580,7 +762,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                         <!-- TIMELINE ITEM -->
                                                         <div class="timeline-item">
                                                             <div class="timeline-badge">
-                                                                <img class="timeline-badge-userpic" src="../../assets/admin/pages/media/users/avatar80_1.jpg">
+                                                                <img class="timeline-badge-userpic" src="assets/admin/pages/media/users/avatar80_1.jpg">
                                                             </div>
                                                             <div class="timeline-body">
                                                                 <div class="timeline-body-arrow">
@@ -624,7 +806,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                         <!-- TIMELINE ITEM -->
                                                         <div class="timeline-item">
                                                             <div class="timeline-badge">
-                                                                <img class="timeline-badge-userpic" src="../../assets/admin/pages/media/users/avatar80_2.jpg">
+                                                                <img class="timeline-badge-userpic" src="assets/admin/pages/media/users/avatar80_2.jpg">
                                                             </div>
                                                             <div class="timeline-body">
                                                                 <div class="timeline-body-arrow">
@@ -640,14 +822,14 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                                 <div class="timeline-body-content">
                                                                     <span class="font-grey-cascade">
 									<p>
-										<img class="timeline-body-img pull-right" src="../../assets/admin/pages/media/blog/4.jpg" alt="">
+										<img class="timeline-body-img pull-right" src="assets/admin/pages/media/blog/4.jpg" alt="">
 										Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi. coriander bitterleaf epazote radicchio shallot winter purslane collard.
 									</p>
 									<p>
 										 Coriander bitterleaf epazote radicchio shallot winter purslane collard. Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.
 									</p>
 									<p>
-										<img class="timeline-body-img pull-left" src="../../assets/admin/pages/media/blog/6.jpg" alt=""> Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi radicchio shallot winter purslane collard greens spring onion squash lentil.
+										<img class="timeline-body-img pull-left" src="assets/admin/pages/media/blog/6.jpg" alt=""> Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi radicchio shallot winter purslane collard greens spring onion squash lentil.
 									</p>
 									<p>
 										 Coriander bitterleaf epazote radicchio shallot winter purslane collard. Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.
@@ -660,7 +842,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                         <!-- TIMELINE ITEM WITH GOOGLE MAP -->
                                                         <div class="timeline-item">
                                                             <div class="timeline-badge">
-                                                                <img class="timeline-badge-userpic" src="../../assets/admin/pages/media/users/avatar80_3.jpg">
+                                                                <img class="timeline-badge-userpic" src="assets/admin/pages/media/users/avatar80_3.jpg">
                                                             </div>
                                                             <div class="timeline-body">
                                                                 <div class="timeline-body-arrow">
@@ -751,7 +933,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                         <!-- TIMELINE ITEM -->
                                                         <div class="timeline-item">
                                                             <div class="timeline-badge">
-                                                                <img class="timeline-badge-userpic" src="../../assets/admin/pages/media/users/avatar80_1.jpg">
+                                                                <img class="timeline-badge-userpic" src="assets/admin/pages/media/users/avatar80_1.jpg">
                                                             </div>
                                                             <div class="timeline-body">
                                                                 <div class="timeline-body-arrow">
@@ -774,7 +956,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                         <!-- TIMELINE ITEM -->
                                                         <div class="timeline-item">
                                                             <div class="timeline-badge">
-                                                                <img class="timeline-badge-userpic img-circle" src="../../assets/admin/pages/media/users/avatar80_2.jpg">
+                                                                <img class="timeline-badge-userpic img-circle" src="assets/admin/pages/media/users/avatar80_2.jpg">
                                                             </div>
                                                             <div class="timeline-body">
                                                                 <div class="timeline-body-arrow">
@@ -790,14 +972,14 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                                 <div class="timeline-body-content">
                                                                     <span class="font-grey-cascade">
 									<p>
-										<img class="timeline-body-img pull-right" src="../../assets/admin/pages/media/blog/4.jpg" alt="">
+										<img class="timeline-body-img pull-right" src="assets/admin/pages/media/blog/4.jpg" alt="">
 										Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi. coriander bitterleaf epazote radicchio shallot winter purslane collard.
 									</p>
 									<p>
 										 Coriander bitterleaf epazote radicchio shallot winter purslane collard. Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.
 									</p>
 									<p>
-										<img class="timeline-body-img pull-left" src="../../assets/admin/pages/media/blog/6.jpg" alt=""> Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi radicchio shallot winter purslane collard greens spring onion squash lentil.
+										<img class="timeline-body-img pull-left" src="assets/admin/pages/media/blog/6.jpg" alt=""> Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi radicchio shallot winter purslane collard greens spring onion squash lentil.
 									</p>
 									<p>
 										 Coriander bitterleaf epazote radicchio shallot winter purslane collard. Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.
@@ -882,35 +1064,48 @@ Author: Ahmed Saeed & Mohamed Sayed
             <div class="scroll-to-top">
                 <i class="icon-arrow-up"></i>
             </div>
-            <!-- END FOOTER -->
-            <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
-            <!-- BEGIN CORE PLUGINS -->
-            <!--[if lt IE 9]>
+        </div>
+    </div>
+
+    <!-- END FOOTER -->
+    <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+    <!-- BEGIN CORE PLUGINS -->
+    <!--[if lt IE 9]>
                 <script src="assets/global/plugins/respond.min.js"></script>
                 <script src="assets/global/plugins/excanvas.min.js"></script> 
                 <![endif]-->
-            <script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
-            <script src="assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
-            <!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
-            <script src="assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
-            <script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-            <script src="assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
-            <script src="assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
-            <script src="assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
-            <script src="assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
-            <script src="assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
-            <!-- END CORE PLUGINS -->
-            <script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
-            <script src="assets/admin/layout3/scripts/layout.js" type="text/javascript"></script>
-            <script src="assets/admin/layout3/scripts/demo.js" type="text/javascript"></script>
-            <script>
-                jQuery(document).ready(function () {
-                    Metronic.init(); // init metronic core components
-                    Layout.init(); // init current layout
-                    Demo.init(); // init demo features
-                });
-            </script>
-            <!-- END JAVASCRIPTS -->
+    <script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+    <!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+    <script src="assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+    <script src="assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+    <script src="assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+    <script src="assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="assets/global/plugins/jquery-mixitup/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="assets/global/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
+    <!-- END CORE PLUGINS -->
+    <script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
+    <script src="assets/admin/layout3/scripts/layout.js" type="text/javascript"></script>
+    <script src="assets/admin/layout3/scripts/demo.js" type="text/javascript"></script>
+    <script src="assets/global/plugins/dropzone/dropzone.js"></script>
+    <script src="assets/admin/pages/scripts/portfolio.js"></script>
+
+
+    <script>
+        jQuery(document).ready(function () {
+            Metronic.init(); // init metronic core components
+            Layout.init(); // init current layout
+            Demo.init(); // init demo features
+            
+   Portfolio.init();
+
+        });
+    </script>
+    <!-- END JAVASCRIPTS -->
 </body>
 <!-- END BODY -->
 
