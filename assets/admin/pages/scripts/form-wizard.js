@@ -64,33 +64,64 @@ var FormWizard = function () {
                     address: {
                         required: true
                     },
-                    city: {
+                    mobile: {
                         required: true
                     },
                     country: {
                         required: true
                     },
-                    //payment
-                    card_name: {
+                   
+                    english_name: {
                         required: true
                     },
-                    card_number: {
-                        minlength: 16,
-                        maxlength: 16,
+                    arabic_name: {
                         required: true
                     },
-                    card_cvc: {
-                        digits: true,
-                        required: true,
-                        minlength: 3,
-                        maxlength: 4
-                    },
-                    card_expiry_date: {
+                    status: {
+                        
                         required: true
                     },
-                    'payment[]': {
-                        required: true,
-                        minlength: 1
+                    birth_date: {
+                        required: true
+                    },
+                    id_num: {
+                        required: true
+                    },
+                    id_date: {
+                        required: true
+                    },
+                    id_exp: {
+                        required: true
+                    },
+                    job_title: {
+                        required: true
+                    },
+                    degree: {
+                        required: true
+                    },
+                    department: {
+                        required: true
+                    },
+                    contract_date: {
+                        required: true
+                    },
+                    cont_exp: {
+                        required: true
+                    },
+                    work_years: {
+                        required: true
+                    },
+                    job_class: {
+                        required: true
+                    },
+                    vacation: {
+                        required: true
+                    },
+                    man_hour: {
+                        required: true
+                    },
+                    branch: {
+                        required: true
                     }
                 },
 
