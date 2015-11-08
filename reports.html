@@ -711,13 +711,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <h3>Serialised Output (per list)</h3>
-                                                        <textarea id="nestable_list_1_output" class="form-control col-md-12 margin-bottom-10"></textarea>
-                                                        <textarea id="nestable_list_2_output" class="form-control col-md-12 margin-bottom-10"></textarea>
-                                                    </div>
-                                                </div>
+                                              
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="portlet box blue">
@@ -1046,8 +1040,10 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                                         </li>
 
                                                                     </ol>
+                                                                    
                                                                 </div>
                                                             </div>
+                                                            
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
@@ -1085,7 +1081,20 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                 </div>
 
                                             </div>
-                                            <!-- END PAGE CONTENT INNER -->
+                                              <div class="row">
+                                                    <div class="col-md-12" >
+                                                       <!-- Serialised Output (per list) -->
+                                                        <form action="javascript:;" id="drag_form" class="form-horizontal">
+                                                            <textarea style="display:none;" id="nestable_list_2_output" class="form-control"></textarea>      <div class="form-actions">
+                                                            <div class="row">
+                                                                <div class="col-md-offset-3 col-md-9">
+                                                                    <button type="submit" class="btn green">Submit</button>
+                                                                    <button type="button" class="btn default">Cancel</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>    </form>
+                                                    </div>
+                                                </div>
                                         </div>
 
                                     </div>
@@ -2217,6 +2226,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                                     <button type="button" class="btn default">Cancel</button>
                                                                 </div>
                                                             </div>
+                                                            
                                                         </div>
                                                     </div>
                                                 </form>
