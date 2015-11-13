@@ -13,7 +13,7 @@ Author: Ahmed Saeed & Mohamed Sayed
 
 <head>
     <meta charset="utf-8" />
-    <title>المحامى | تسجيل محامى</title>
+    <title>المحامى | تعديل المحامى</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -33,10 +33,10 @@ Author: Ahmed Saeed & Mohamed Sayed
     <!-- END PAGE LEVEL SCRIPTS -->
     <!-- BEGIN THEME STYLES -->
     <link href="assets-rtl/global/css/components-rounded-rtl.css" id="style_components" rel="stylesheet" type="text/css">
-<link href="assets-rtl/global/css/plugins-rtl.css" rel="stylesheet" type="text/css">
-<link href="assets-rtl/admin/layout3/css/layout-rtl.css" rel="stylesheet" type="text/css">
-<link href="assets-rtl/admin/layout3/css/themes/default-rtl.css" rel="stylesheet" type="text/css" id="style_color">
-<link href="assets-rtl/admin/layout3/css/custom-rtl.css" rel="stylesheet" type="text/css">
+    <link href="assets-rtl/global/css/plugins-rtl.css" rel="stylesheet" type="text/css">
+    <link href="assets-rtl/admin/layout3/css/layout-rtl.css" rel="stylesheet" type="text/css">
+    <link href="assets-rtl/admin/layout3/css/themes/default-rtl.css" rel="stylesheet" type="text/css" id="style_color">
+    <link href="assets-rtl/admin/layout3/css/custom-rtl.css" rel="stylesheet" type="text/css">
     <!-- END THEME STYLES -->
     <link rel="shortcut icon" href="favicon.ico" />
 </head>
@@ -59,7 +59,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                 <!-- BEGIN RESPONSIVE MENU TOGGLER -->
                 <a href="javascript:;" class="menu-toggler"></a>
                 <!-- END RESPONSIVE MENU TOGGLER -->
-           <!-- BEGIN TOP NAVIGATION MENU -->
+             <!-- BEGIN TOP NAVIGATION MENU -->
                 <div class="top-menu">
                     <ul class="nav navbar-nav pull-right">
                         <!-- BEGIN NOTIFICATION DROPDOWN -->
@@ -491,52 +491,17 @@ Author: Ahmed Saeed & Mohamed Sayed
             <div class="container">
                 <!-- BEGIN PAGE TITLE -->
                 <div class="page-title">
-                    <h1>أضافة محامى جديد</h1>
+                    <h1>Add new lawyer</h1>
                 </div>
                 <!-- END PAGE TITLE -->
-           
+        
             </div>
         </div>
         <!-- END PAGE HEAD -->
         <!-- BEGIN PAGE CONTENT -->
         <div class="page-content">
             <div class="container">
-                <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-                <div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                                <h4 class="modal-title">Modal title</h4>
-                            </div>
-                            <div class="modal-body">
-                                Widget settings form goes here
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn blue">Save changes</button>
-                                <button type="button" class="btn default" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                        <!-- /.modal-content -->
-                    </div>
-                    <!-- /.modal-dialog -->
-                </div>
-                <!-- /.modal -->
-                <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-                <!-- BEGIN PAGE BREADCRUMB -->
-                <ul class="page-breadcrumb breadcrumb">
-                    <li>
-                        <a href="#">الرئيسية</a><i class="fa fa-circle"></i>
-                    </li>
-                    <li>
-                        <a href="form_wizard.html">أضافة محامى</a>
-                        <i class="fa fa-circle"></i>
-                    </li>
-                    <li class="active">
-                        أضافة محامى جديد
-                    </li>
-                </ul>
-                <!-- END PAGE BREADCRUMB -->
+    
                 <!-- BEGIN PAGE CONTENT INNER -->
                 <div class="row">
                     <div class="col-md-12">
@@ -555,7 +520,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                         <span class="number">
 												1 </span>
                                                         <span class="desc">
-												<i class="fa fa-check"></i> بيانات الحساب</span>
+												<i class="fa fa-check"></i>تعديل الحساب </span>
                                                     </a>
                                                 </li>
                                                 <li>
@@ -563,7 +528,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                         <span class="number">
 												2 </span>
                                                         <span class="desc">
-												<i class="fa fa-check"></i> بيانات الحساب الشخصى </span>
+												<i class="fa fa-check"></i>تعديل الملف الشخصى </span>
                                                     </a>
                                                 </li>
                                                 <li>
@@ -571,7 +536,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                         <span class="number">
 												3 </span>
                                                         <span class="desc">
-												<i class="fa fa-check"></i> بيانات العمل </span>
+												<i class="fa fa-check"></i>تعديل بيانات العمل</span>
                                                     </a>
                                                 </li>
 
@@ -583,65 +548,32 @@ Author: Ahmed Saeed & Mohamed Sayed
                                             <div class="tab-content">
                                                 <div class="alert alert-danger display-none">
                                                     <button class="close" data-dismiss="alert"></button>
-                                                    برجاء التحقق من الحقول أدناه
+                                                    لديك بعض الاخطاء برجاء التحقق منها
                                                 </div>
                                                 <div class="alert alert-success display-none">
                                                     <button class="close" data-dismiss="alert"></button>
-                                                    لقد تم التسجيل بنجاح
+                                                    لقد تم التعديل بنجاح
                                                 </div>
                                                 <div class="tab-pane active" id="tab1">
-                                                    <h3 class="block">بيانات الحساب</h3>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">ألاسم كاملاً <span class="required">
+                                                    <h3 class="block">تعديل بيانات الحساب</h3>
+                                                  <div class="form-group">
+                                                        <label class="control-label col-md-3">اسم المستخدم <span class="required">
 													* </span>
                                                         </label>
                                                         <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="english_name" />
-                                                            <span class="help-block">
-														الأسم كاملاً باللغه الأنجليزية </span>
+                                                            <input type="text" value="tamer" class="form-control" name="username" />
+                                                    
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">الأسم كاملاً بالعربية<span class="required">
-													* </span>
+                                                        <label class="control-label col-md-3">كلمة المرور
                                                         </label>
                                                         <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="arabic_name" />
-                                                            <span class="help-block">
-														الأسم بالعربية </span>
+                                                            <input type="password" class="form-control" name="change_password" id="submit_form_password" />
+                                                          
                                                         </div>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">أسم المستخدم <span class="required">
-													* </span>
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="username" />
-                                                            <span class="help-block">
-														أسم المستخدم</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">كلمة المرور <span class="required">
-													* </span>
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input type="password" class="form-control" name="password" id="submit_form_password" />
-                                                            <span class="help-block">
-														كلمة المرور </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">تأكيد كلمة المرور <span class="required">
-													* </span>
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input type="password" class="form-control" name="rpassword" />
-                                                            <span class="help-block">
-														تأكيد كلمة المرور </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
+                                                  <div class="form-group">
                                                         <label class="control-label col-md-3">الحالة <span class="required">
 										* </span>
                                                         </label>
@@ -650,8 +582,8 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                         <div class="col-md-4">
                                                             <select class="form-control" name="status">
                                                                 <option value="">اختيار ...</option>
-                                                                <option value="Alhamrany">مفعل</option>
-                                                                <option value="Reda">معلق</option>
+                                                                <option value="active" selected>مفعل</option>
+                                                                <option value="suspend">موقوف</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -661,21 +593,19 @@ Author: Ahmed Saeed & Mohamed Sayed
 													* </span>
                                                         </label>
                                                         <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="email" />
-                                                            <span class="help-block">
-														البريد الألكترونى</span>
+                                                            <input type="text" value="tamer@gmail.com" class="form-control" name="email" />
+                                                         
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="tab-pane" id="tab2">
-                                                    <h3 class="block">بيانات الحساب الشخصى</h3>
+                                                    <h3 class="block">تعديل الملف الشخصى</h3>
                                                     <div class="form-group">
                                                         <label class="control-label col-md-3">فيس بوك
                                                         </label>
                                                         <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="facebook" />
-                                                            <span class="help-block">
-														الفيس بوك الخاص بالمحامى </span>
+                                                            <input type="text" value="www.facebook.com/hell0maker" class="form-control" name="facebook" />
+                                                    
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
@@ -683,17 +613,16 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                         </label>
                                                         <div class="col-md-4">
                                                             <input type="text" class="form-control" name="skype" />
-                                                            <span class="help-block">
-														سكايب الخاص بالمحامى </span>
+                                                   
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="control-label col-md-3">فصيلة الدم
                                                         </label>
                                                         <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="blood" />
+                                                            <input type="text" value="A+" class="form-control" name="blood" />
                                                             <span class="help-block">
-														فصيلة الدم مثال A+ </span>
+														مثال: A+ </span>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
@@ -701,9 +630,8 @@ Author: Ahmed Saeed & Mohamed Sayed
 													* </span>
                                                         </label>
                                                         <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="phone" />
-                                                            <span class="help-block">
-														رقم الهاتف المنزلى </span>
+                                                            <input type="text" value="085224556" class="form-control" name="phone" />
+                                                   
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
@@ -711,24 +639,22 @@ Author: Ahmed Saeed & Mohamed Sayed
 													* </span>
                                                         </label>
                                                         <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="mobile" />
-                                                            <span class="help-block">
-														رقم الهاتف المحمول </span>
+                                                            <input type="text" value="0125445584" class="form-control" name="mobile" />
+                                                       
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">تاريخ الميلاد <span class="required">
+                                                        <label class="control-label col-md-3">تاريخ الميلاد<span class="required">
 										* </span></label>
                                                         <div class="col-md-4">
                                                             <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
-                                                                <input type="text" class="form-control" readonly name="birth_date">
+                                                                <input type="text" value="15-5-1994" class="form-control" readonly name="birth_date">
                                                                 <span class="input-group-btn">
 												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
 												</span>
                                                             </div>
                                                             <!-- /input-group -->
-                                                            <span class="help-block">
-											قم بأختيار تاريخ ميلادك </span>
+                                            
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
@@ -738,9 +664,9 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                         <div class="col-md-4">
                                                             <div class="radio-list">
                                                                 <label>
-                                                                    <input type="radio" name="gender" value="M" data-title="Male" /> رجل </label>
+                                                                    <input type="radio" name="gender" value="M" data-title="Male" checked /> ذكر </label>
                                                                 <label>
-                                                                    <input type="radio" name="gender" value="F" data-title="Female" /> انثى </label>
+                                                                    <input type="radio" name="gender" value="F" data-title="Female" /> أنثى </label>
                                                             </div>
                                                             <div id="form_gender_error">
                                                             </div>
@@ -751,9 +677,8 @@ Author: Ahmed Saeed & Mohamed Sayed
 													* </span>
                                                         </label>
                                                         <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="address" />
-                                                            <span class="help-block">
-														عنوان المنزل  </span>
+                                                            <input type="text" value="Egypt - Beni suef" class="form-control" name="address" />
+                                                          
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
@@ -763,64 +688,60 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                         <div class="col-md-4">
                                                             <select class="form-control" name="country">
                                                                 <option value="">اختيار ...</option>
-                                                                <option value="egypt">مصر </option>
+                                                                <option value="egypt" selected>مصر</option>
                                                                 <option value="saudi">السعودية</option>
-                                                            </select> <span class="help-block">
-														قم بأختيار بلدك </span>
+                                                            </select> 
                                                         </div>
                                                     </div>
 
                                                 </div>
                                                 <div class="tab-pane" id="tab3">
-                                                    <h3 class="block">بيانات العمل</h3>
+                                                    <h3 class="block">تعديل بيانات العمل</h3>
 
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">الرقم التعريفى <span class="required">
+                                                        <label class="control-label col-md-3">الرقم التسلسلى  <span class="required">
 										* </span>
                                                         </label>
                                                         <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="id_num" />
-                                                            <span class="help-block">
-														قم بإدخال الرقم التعريفى </span>
+                                                            <input type="text" value="5565454485522" class="form-control" name="id_num" />
+                                                            
                                                         </div>
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">تاريخ الاصدار<span class="required">
+                                                        <label class="control-label col-md-3">تاريخ الأصدار <span class="required">
 										* </span></label>
                                                         <div class="col-md-4">
                                                             <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
-                                                                <input type="text" class="form-control" readonly name="id_date">
+                                                                <input type="text" value="11-5-2014" class="form-control"  name="id_date">
                                                                 <span class="input-group-btn">
 												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
 												</span>
                                                             </div>
                                                             <!-- /input-group -->
-                                                            <span class="help-block">
-											قم بأختيار تاريخ الأصدار </span>
+                                                      
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">تاريخ الانتهاء <span class="required">
+                                                        <label class="control-label col-md-3">تاريخ الأنتهاء<span class="required">
 										* </span></label>
                                                         <div class="col-md-4">
                                                             <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
-                                                                <input type="text" class="form-control" readonly name="id_exp">
+                                                                <input type="text" class="form-control" value="11-5-2017" name="id_exp">
                                                                 <span class="input-group-btn">
 												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
 												</span>
                                                             </div>
                                                             <!-- /input-group -->
-                                                            <span class="help-block">
-											قم بأختيار تاريخ الانتهاء </span>
+                                                       
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">المسمى الوظيفى <span class="required">
+                                                        <label class="control-label col-md-3">المسمى الوظيفى<span class="required">
 										* </span>
                                                         </label>
                                                         <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="job_title" />
+                                                            <input type="text" class="form-control" value="lawyer" name="job_title" />
                                                             <span class="help-block">
 														المسمى الوظيفى للمحامى </span>
                                                         </div>
@@ -830,9 +751,8 @@ Author: Ahmed Saeed & Mohamed Sayed
 										* </span>
                                                         </label>
                                                         <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="degree" />
-                                                            <span class="help-block">
-														الشهادة الجامعية للمحامى </span>
+                                                            <input type="text" class="form-control" value="very good" name="degree" />
+                                                        
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
@@ -844,7 +764,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                         <div class="col-md-4">
                                                             <select class="form-control" name="department">
                                                                 <option value="">اختيار ...</option>
-                                                                <option value="legal">قسم القضايا</option>
+                                                                <option value="legal" selected>قسم القضايا</option>
                                                                 <option value="consultant">قسم الاستشارات</option>
                                                             </select>
                                                         </div>
@@ -854,14 +774,13 @@ Author: Ahmed Saeed & Mohamed Sayed
 										* </span></label>
                                                         <div class="col-md-4">
                                                             <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
-                                                                <input type="text" class="form-control" readonly name="contract_date">
+                                                                <input type="text" class="form-control" value="11-5-2014" name="contract_date">
                                                                 <span class="input-group-btn">
 												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
 												</span>
                                                             </div>
                                                             <!-- /input-group -->
-                                                            <span class="help-block">
-											قم بأختيار تاريخ العقد </span>
+                                                  
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
@@ -869,29 +788,27 @@ Author: Ahmed Saeed & Mohamed Sayed
 										* </span></label>
                                                         <div class="col-md-4">
                                                             <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
-                                                                <input type="text" class="form-control" readonly name="cont_exp">
+                                                                <input type="text" class="form-control" value="11-5-2016" name="cont_exp">
                                                                 <span class="input-group-btn">
 												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
 												</span>
                                                             </div>
                                                             <!-- /input-group -->
-                                                            <span class="help-block">
-											قم باختيار تاريخ انتهاء العقد </span>
+                                                           
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="control-label col-md-3">سنوات العمل</label>
                                                         <div class="col-md-9">
-                                                                    <input type="text" class="form-control" name="work_years"  maxlength="3">
+                                                                    <input type="text" class="form-control" value="3" name="work_years"  maxlength="3">
                                                                
                                                                 </div>
                                                             </div>
-                                                            <span class="help-block">
-											سنوات العمل </span>
+                                                           
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">الوظيفة <span class="required">
+                                                        <label class="control-label col-md-3">تصنيف العمل <span class="required">
 										* </span>
                                                         </label>
 
@@ -899,13 +816,13 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                         <div class="col-md-4">
                                                             <select class="form-control" name="job_class">
                                                                 <option value="">اختيار ...</option>
-                                                                <option value="lawyer">محامى</option>
+                                                                <option value="lawyer" selected>محامى</option>
                                                                 <option value="depart">إدارى</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">المؤهلات
+                                                        <label class="control-label col-md-3">الشهادات
                                                         </label>
                                                         <div class="col-md-4">
                                                             <textarea name="certificates" type="text" class="form-control"></textarea>
@@ -913,23 +830,21 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">ايام الاجازات <span class="required">
+                                                        <label class="control-label col-md-3">أيام الاجازات <span class="required">
 										* </span>
                                                         </label>
                                                         <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="vacation" />
-                                                            <span class="help-block">
-														ايام اجازات المحامى </span>
+                                                            <input type="text" value="15" class="form-control" name="vacation" />
+                                                        
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">ثمن الساعة <span class="required">
+                                                        <label class="control-label col-md-3">سعر الساعة <span class="required">
 										* </span>
                                                         </label>
                                                         <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="man_hour" />
-                                                            <span class="help-block">
-														ثمن الساعة  </span>
+                                                            <input type="text" value="8" class="form-control" name="man_hour" />
+                                                  
                                                         </div>
                                                     </div>
 
@@ -942,7 +857,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                         <div class="col-md-4">
                                                             <select class="form-control" name="branch">
                                                                 <option value="">اختيار ...</option>
-                                                                <option value="lawyer">فرع الرياض</option>
+                                                                <option value="lawyer" selected>فرع الرياض</option>
                                                                 <option value="depart">فرع جدة</option>
                                                             </select>
                                                         </div>
@@ -959,7 +874,7 @@ Author: Ahmed Saeed & Mohamed Sayed
 												استكمال <i class="m-icon-swapright m-icon-white"></i>
 												</a>
                                                     <a href="javascript:;" class="btn green button-submit">
-												التسجيل <i class="m-icon-swapright m-icon-white"></i>
+												حفظ <i class="m-icon-swapright m-icon-white"></i>
 												</a>
                                                 </div>
                                             </div>

@@ -13,7 +13,7 @@ Author: Ahmed Saeed & Mohamed Sayed
 
 <head>
     <meta charset="utf-8" />
-    <title>المحامى | تسجيل محامى</title>
+    <title>المحامى | تعديل القضية</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -28,15 +28,16 @@ Author: Ahmed Saeed & Mohamed Sayed
     <!-- END GLOBAL MANDATORY STYLES -->
     <!-- BEGIN PAGE LEVEL STYLES -->
     <link rel="stylesheet" type="text/css" href="assets-rtl/global/plugins/select2/select2.css" />
-    <link rel="stylesheet" type="text/css" href="assets-rtl/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" />
 
+    <link rel="stylesheet" type="text/css" href="assets-rtl/global/plugins/bootstrap-markdown/css/bootstrap-markdown.min.css">
+    <link rel="stylesheet" type="text/css" href="assets-rtl/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" />
     <!-- END PAGE LEVEL SCRIPTS -->
     <!-- BEGIN THEME STYLES -->
     <link href="assets-rtl/global/css/components-rounded-rtl.css" id="style_components" rel="stylesheet" type="text/css">
-<link href="assets-rtl/global/css/plugins-rtl.css" rel="stylesheet" type="text/css">
-<link href="assets-rtl/admin/layout3/css/layout-rtl.css" rel="stylesheet" type="text/css">
-<link href="assets-rtl/admin/layout3/css/themes/default-rtl.css" rel="stylesheet" type="text/css" id="style_color">
-<link href="assets-rtl/admin/layout3/css/custom-rtl.css" rel="stylesheet" type="text/css">
+    <link href="assets-rtl/global/css/plugins-rtl.css" rel="stylesheet" type="text/css">
+    <link href="assets-rtl/admin/layout3/css/layout-rtl.css" rel="stylesheet" type="text/css">
+    <link href="assets-rtl/admin/layout3/css/themes/default-rtl.css" rel="stylesheet" type="text/css" id="style_color">
+    <link href="assets-rtl/admin/layout3/css/custom-rtl.css" rel="stylesheet" type="text/css">
     <!-- END THEME STYLES -->
     <link rel="shortcut icon" href="favicon.ico" />
 </head>
@@ -401,8 +402,8 @@ Author: Ahmed Saeed & Mohamed Sayed
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search" name="query">
                         <span class="input-group-btn">
-					<a href="javascript:;" class="btn submit"><i class="icon-magnifier"></i></a>
-					</span>
+                                <a href="javascript:;" class="btn submit"><i class="icon-magnifier"></i></a>
+                            </span>
                     </div>
                 </form>
                 <!-- END HEADER SEARCH BOX -->
@@ -491,490 +492,230 @@ Author: Ahmed Saeed & Mohamed Sayed
             <div class="container">
                 <!-- BEGIN PAGE TITLE -->
                 <div class="page-title">
-                    <h1>أضافة محامى جديد</h1>
+                    <h1>Edit case</h1>
                 </div>
                 <!-- END PAGE TITLE -->
-           
+                <!-- BEGIN PAGE TOOLBAR -->
+
+                <!-- END THEME PANEL -->
             </div>
+            <!-- END PAGE TOOLBAR -->
         </div>
-        <!-- END PAGE HEAD -->
-        <!-- BEGIN PAGE CONTENT -->
-        <div class="page-content">
-            <div class="container">
-                <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-                <div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                                <h4 class="modal-title">Modal title</h4>
+    </div>
+    <!-- END PAGE HEAD -->
+    <!-- BEGIN PAGE CONTENT -->
+    <div class="page-content">
+        <div class="container">
+            
+            <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+            <!-- BEGIN PAGE CONTENT INNER -->
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="portlet box blue-hoki">
+                        <div class="portlet-title">
+                            <div class="caption">
+                                <i class="fa fa-gift"></i>بيانات القضية
                             </div>
-                            <div class="modal-body">
-                                Widget settings form goes here
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn blue">Save changes</button>
-                                <button type="button" class="btn default" data-dismiss="modal">Close</button>
-                            </div>
+
                         </div>
-                        <!-- /.modal-content -->
-                    </div>
-                    <!-- /.modal-dialog -->
-                </div>
-                <!-- /.modal -->
-                <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-                <!-- BEGIN PAGE BREADCRUMB -->
-                <ul class="page-breadcrumb breadcrumb">
-                    <li>
-                        <a href="#">الرئيسية</a><i class="fa fa-circle"></i>
-                    </li>
-                    <li>
-                        <a href="form_wizard.html">أضافة محامى</a>
-                        <i class="fa fa-circle"></i>
-                    </li>
-                    <li class="active">
-                        أضافة محامى جديد
-                    </li>
-                </ul>
-                <!-- END PAGE BREADCRUMB -->
-                <!-- BEGIN PAGE CONTENT INNER -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="portlet light" id="form_wizard_1">
-                            <div class="portlet-title">
-
-
-                            </div>
-                            <div class="portlet-body form">
-                                <form action="javascript:;" class="form-horizontal" id="submit_form" method="POST">
-                                    <div class="form-wizard">
-                                        <div class="form-body">
-                                            <ul class="nav nav-pills nav-justified steps">
-                                                <li>
-                                                    <a href="#tab1" data-toggle="tab" class="step">
-                                                        <span class="number">
-												1 </span>
-                                                        <span class="desc">
-												<i class="fa fa-check"></i> بيانات الحساب</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#tab2" data-toggle="tab" class="step">
-                                                        <span class="number">
-												2 </span>
-                                                        <span class="desc">
-												<i class="fa fa-check"></i> بيانات الحساب الشخصى </span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#tab3" data-toggle="tab" class="step">
-                                                        <span class="number">
-												3 </span>
-                                                        <span class="desc">
-												<i class="fa fa-check"></i> بيانات العمل </span>
-                                                    </a>
-                                                </li>
-
-                                            </ul>
-                                            <div id="bar" class="progress progress-striped" role="progressbar">
-                                                <div class="progress-bar progress-bar-success">
-                                                </div>
-                                            </div>
-                                            <div class="tab-content">
-                                                <div class="alert alert-danger display-none">
+                        <div class="portlet-body form">
+                            <!-- BEGIN FORM-->
+                            <form action="javascript:;" id="form_sample_1" class="form-horizontal">
+                               <div class="alert alert-danger display-none">
                                                     <button class="close" data-dismiss="alert"></button>
-                                                    برجاء التحقق من الحقول أدناه
+                                                   لديك بعض الاخطاء برجاء التأكد
                                                 </div>
                                                 <div class="alert alert-success display-none">
                                                     <button class="close" data-dismiss="alert"></button>
-                                                    لقد تم التسجيل بنجاح
+                                                    لقد تم التعديل بنجاح
                                                 </div>
-                                                <div class="tab-pane active" id="tab1">
-                                                    <h3 class="block">بيانات الحساب</h3>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">ألاسم كاملاً <span class="required">
-													* </span>
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="english_name" />
-                                                            <span class="help-block">
-														الأسم كاملاً باللغه الأنجليزية </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">الأسم كاملاً بالعربية<span class="required">
-													* </span>
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="arabic_name" />
-                                                            <span class="help-block">
-														الأسم بالعربية </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">أسم المستخدم <span class="required">
-													* </span>
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="username" />
-                                                            <span class="help-block">
-														أسم المستخدم</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">كلمة المرور <span class="required">
-													* </span>
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input type="password" class="form-control" name="password" id="submit_form_password" />
-                                                            <span class="help-block">
-														كلمة المرور </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">تأكيد كلمة المرور <span class="required">
-													* </span>
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input type="password" class="form-control" name="rpassword" />
-                                                            <span class="help-block">
-														تأكيد كلمة المرور </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">الحالة <span class="required">
+                                <br>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">أسم القضية <span class="required">
 										* </span>
-                                                        </label>
-
-
-                                                        <div class="col-md-4">
-                                                            <select class="form-control" name="status">
-                                                                <option value="">اختيار ...</option>
-                                                                <option value="Alhamrany">مفعل</option>
-                                                                <option value="Reda">معلق</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">البريد الألكترونى <span class="required">
-													* </span>
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="email" />
-                                                            <span class="help-block">
-														البريد الألكترونى</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane" id="tab2">
-                                                    <h3 class="block">بيانات الحساب الشخصى</h3>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">فيس بوك
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="facebook" />
-                                                            <span class="help-block">
-														الفيس بوك الخاص بالمحامى </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">سكايب
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="skype" />
-                                                            <span class="help-block">
-														سكايب الخاص بالمحامى </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">فصيلة الدم
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="blood" />
-                                                            <span class="help-block">
-														فصيلة الدم مثال A+ </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">رقم الهاتف <span class="required">
-													* </span>
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="phone" />
-                                                            <span class="help-block">
-														رقم الهاتف المنزلى </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">رقم المحمول <span class="required">
-													* </span>
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="mobile" />
-                                                            <span class="help-block">
-														رقم الهاتف المحمول </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">تاريخ الميلاد <span class="required">
-										* </span></label>
-                                                        <div class="col-md-4">
-                                                            <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
-                                                                <input type="text" class="form-control" readonly name="birth_date">
-                                                                <span class="input-group-btn">
-												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
-												</span>
-                                                            </div>
-                                                            <!-- /input-group -->
-                                                            <span class="help-block">
-											قم بأختيار تاريخ ميلادك </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">النوع <span class="required">
-													* </span>
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <div class="radio-list">
-                                                                <label>
-                                                                    <input type="radio" name="gender" value="M" data-title="Male" /> رجل </label>
-                                                                <label>
-                                                                    <input type="radio" name="gender" value="F" data-title="Female" /> انثى </label>
-                                                            </div>
-                                                            <div id="form_gender_error">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">العنوان <span class="required">
-													* </span>
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="address" />
-                                                            <span class="help-block">
-														عنوان المنزل  </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">البلد <span class="required">
-													* </span>
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <select class="form-control" name="country">
-                                                                <option value="">اختيار ...</option>
-                                                                <option value="egypt">مصر </option>
-                                                                <option value="saudi">السعودية</option>
-                                                            </select> <span class="help-block">
-														قم بأختيار بلدك </span>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <div class="tab-pane" id="tab3">
-                                                    <h3 class="block">بيانات العمل</h3>
-
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">الرقم التعريفى <span class="required">
+                                    </label>
+                                    <div class="col-md-4">
+                                        <input type="text" name="case_name" value="divorce case" data-required="1" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">أسم القضية بالعربية <span class="required">
 										* </span>
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="id_num" />
-                                                            <span class="help-block">
-														قم بإدخال الرقم التعريفى </span>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">تاريخ الاصدار<span class="required">
-										* </span></label>
-                                                        <div class="col-md-4">
-                                                            <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
-                                                                <input type="text" class="form-control" readonly name="id_date">
-                                                                <span class="input-group-btn">
-												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
-												</span>
-                                                            </div>
-                                                            <!-- /input-group -->
-                                                            <span class="help-block">
-											قم بأختيار تاريخ الأصدار </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">تاريخ الانتهاء <span class="required">
-										* </span></label>
-                                                        <div class="col-md-4">
-                                                            <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
-                                                                <input type="text" class="form-control" readonly name="id_exp">
-                                                                <span class="input-group-btn">
-												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
-												</span>
-                                                            </div>
-                                                            <!-- /input-group -->
-                                                            <span class="help-block">
-											قم بأختيار تاريخ الانتهاء </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">المسمى الوظيفى <span class="required">
+                                    </label>
+                                    <div class="col-md-4">
+                                        <input name="arabic_name" type="text" value="قضية طلاق" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">العميل <span class="required">
 										* </span>
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="job_title" />
-                                                            <span class="help-block">
-														المسمى الوظيفى للمحامى </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">الشهادة الجامعية <span class="required">
+                                    </label>
+
+
+                                    <div class="col-md-4">
+                                        <select class="form-control" name="client">
+                                            <option value="">اختيار ...</option>
+                                            <option value="Alhamrany" selected>Alhamrany</option>
+                                            <option value="Reda">Reda Abo gabl</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">نوع القضية <span class="required">
 										* </span>
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="degree" />
-                                                            <span class="help-block">
-														الشهادة الجامعية للمحامى </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">القسم <span class="required">
+                                    </label>
+
+
+                                    <div class="col-md-4">
+                                        <select class="form-control" name="case_type">
+                                            <option value="">اختيار ...</option>
+                                            <option value="commerce" selected>تجارية شركات</option>
+                                            <option value="newly">تأسيس شركة</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">نوع فرع القضية
+                                    </label>
+
+
+                                    <div class="col-md-4">
+                                        <select class="form-control" name="case_type">
+                                            <option value="">اختيار ...</option>
+                                            <option value="commerce" selected>تجارية </option>
+                                            <option value="commerce">مالية</option>
+                                            <option value="newly">تعويضات</option>
+                                            <option value="newly">حقوق مالية</option>
+                                                <option value="newly">مقولات عامة</option>
+
+                                                <option value="newly">هندسية</option>
+
+                                            <option value="newly">إدارية</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">نوع عقد القضية <span class="required">
 										* </span>
-                                                        </label>
+                                    </label>
 
 
-                                                        <div class="col-md-4">
-                                                            <select class="form-control" name="department">
-                                                                <option value="">اختيار ...</option>
-                                                                <option value="legal">قسم القضايا</option>
-                                                                <option value="consultant">قسم الاستشارات</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">تاريخ العقد<span class="required">
-										* </span></label>
-                                                        <div class="col-md-4">
-                                                            <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
-                                                                <input type="text" class="form-control" readonly name="contract_date">
-                                                                <span class="input-group-btn">
-												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
-												</span>
-                                                            </div>
-                                                            <!-- /input-group -->
-                                                            <span class="help-block">
-											قم بأختيار تاريخ العقد </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">تاريخ انتهاء العقد <span class="required">
-										* </span></label>
-                                                        <div class="col-md-4">
-                                                            <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
-                                                                <input type="text" class="form-control" readonly name="cont_exp">
-                                                                <span class="input-group-btn">
-												<button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
-												</span>
-                                                            </div>
-                                                            <!-- /input-group -->
-                                                            <span class="help-block">
-											قم باختيار تاريخ انتهاء العقد </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">سنوات العمل</label>
-                                                        <div class="col-md-9">
-                                                                    <input type="text" class="form-control" name="work_years"  maxlength="3">
-                                                               
-                                                                </div>
-                                                            </div>
-                                                            <span class="help-block">
-											سنوات العمل </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">الوظيفة <span class="required">
+                                    <div class="col-md-4">
+                                        <select class="form-control" name="case_contract">
+                                            <option value="">اختيار ...</option>
+                                            <option value="salary" selected>عقد سنوى</option>
+                                            <option value="part">مبلغ مقطوع</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">مكان القضية <span class="required">
 										* </span>
-                                                        </label>
-
-
-                                                        <div class="col-md-4">
-                                                            <select class="form-control" name="job_class">
-                                                                <option value="">اختيار ...</option>
-                                                                <option value="lawyer">محامى</option>
-                                                                <option value="depart">إدارى</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">المؤهلات
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <textarea name="certificates" type="text" class="form-control"></textarea>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">ايام الاجازات <span class="required">
+                                    </label>
+                                    <div class="col-md-4">
+                                        <input name="case_place" value="egypt main court" type="text" class="form-control" />
+                                        <span class="help-block">
+										محكمة جدة الرئيسية </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">حالة القضية <span class="required">
 										* </span>
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="vacation" />
-                                                            <span class="help-block">
-														ايام اجازات المحامى </span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">ثمن الساعة <span class="required">
+                                    </label>
+
+
+                                    <div class="col-md-4">
+                                        <select class="form-control" name="case_status">
+                                            <option value="">اختيار ...</option>
+                                            <option value="active">مفعلة</option>
+                                            <option value="colsed_success">مغلقة ناجحة</option>
+                                            <option value="colsed_fail">مغلقة خاسرة</option>
+                                            <option value="colsed_client" selected>مغلقة عدم التزام العميل</option>
+                                            <option value="colsed_other">مغلقة سبب اخر</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">تفاصيل العقد
+                                    </label>
+                                    <div class="col-md-4">
+                                        <textarea style="height: 150px;" name="contract_description" type="text" class="form-control">تم الاتفاق على الاتى 
+1- .............
+2- ............
+
+مقابل مبلغ 50000 ريال سعودى</textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">تفاصيل العقد ممتدة
+                                    </label>
+                                    <div class="col-md-4">
+                                        <textarea style="height: 150px;" name="extension_description" type="text" class="form-control">تم الاتفاق على الاتى 
+1- .............
+2- ............
+
+مقابل مبلغ 50000 ريال سعودى</textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">اقصى حد غير مدفوع <span class="required">
 										* </span>
-                                                        </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" name="man_hour" />
-                                                            <span class="help-block">
-														ثمن الساعة  </span>
-                                                        </div>
-                                                    </div>
+                                    </label>
+                                    <div class="col-md-4">
+                                        <input name="max_un" type="text" value="20000" class="form-control" />
+                                        <span class="help-block">
+											100$ </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">أقصى ساعات عمل&nbsp;&nbsp;</label>
+                                    <div class="col-md-4">
+                                        <input name="max_hour" value="1" type="text" class="form-control" />
+                                        <span class="help-block">
+											 رقم </span>
+                                    </div>
+                                </div>
 
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-3">الفرع <span class="required">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">المحامى <span class="required">
 										* </span>
-                                                        </label>
+                                    </label>
+                                    <div class="col-md-4">
+                                        <select class="form-control" name="select_lawyers" multiple>
+                                            <option value="lawyer1" selected>Suhaib</option>
+                                            <option value="lawyer2">Tamer</option>
+                                            <option value="lawyer3">Osama</option>
+                                        </select>
+                                        <span class="help-block">
+											بحد اقصى ثلاث اختيارات </span>
+                                    </div>
 
+                                </div>
+                            
 
-                                                        <div class="col-md-4">
-                                                            <select class="form-control" name="branch">
-                                                                <option value="">اختيار ...</option>
-                                                                <option value="lawyer">فرع الرياض</option>
-                                                                <option value="depart">فرع جدة</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                       
-                                        <div class="form-actions">
-                                            <div class="row">
-                                                <div class="col-md-offset-3 col-md-9">
-                                                    <a href="javascript:;" class="btn default button-previous">
-                                                        <i class="m-icon-swapleft"></i> الرجوع </a>
-                                                    <a href="javascript:;" class="btn blue button-next">
-												استكمال <i class="m-icon-swapright m-icon-white"></i>
-												</a>
-                                                    <a href="javascript:;" class="btn green button-submit">
-												التسجيل <i class="m-icon-swapright m-icon-white"></i>
-												</a>
-                                                </div>
-                                            </div>
+                                <div class="form-actions">
+                                    <div class="row">
+                                        <div class="col-md-offset-3 col-md-9">
+                                            <button type="submit" class="btn green">حفظ</button>
+                                            <button type="button" class="btn default">إلغاء</button>
                                         </div>
-                                    
-                                </form>
-                            </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- END FORM-->
                         </div>
                     </div>
+
                 </div>
-                <!-- END PAGE CONTENT INNER -->
             </div>
+            <!-- END PAGE CONTENT INNER -->
         </div>
-        <!-- END PAGE CONTENT -->
     </div>
+    <!-- END PAGE CONTENT -->
+
     <!-- END PAGE CONTAINER -->
     <!-- BEGIN FOOTER -->
     <div class="page-footer">
@@ -989,9 +730,9 @@ Author: Ahmed Saeed & Mohamed Sayed
     <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
     <!-- BEGIN CORE PLUGINS -->
     <!--[if lt IE 9]>
-<script src="assets-rtl/global/plugins/respond.min.js"></script>
-<script src="assets-rtl/global/plugins/excanvas.min.js"></script> 
-<![endif]-->
+        <script src="assets-rtl/global/plugins/respond.min.js"></script>
+        <script src="assets-rtl/global/plugins/excanvas.min.js"></script> 
+        <![endif]-->
     <script src="assets-rtl/global/plugins/jquery.min.js" type="text/javascript"></script>
     <script src="assets-rtl/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
     <!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
@@ -1003,26 +744,22 @@ Author: Ahmed Saeed & Mohamed Sayed
     <script src="assets-rtl/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
     <script src="assets-rtl/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
     <!-- END CORE PLUGINS -->
+
+
     <!-- BEGIN PAGE LEVEL PLUGINS -->
     <script type="text/javascript" src="assets-rtl/global/plugins/jquery-validation/js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="assets-rtl/global/plugins/jquery-validation/js/additional-methods.min.js"></script>
-    <script type="text/javascript" src="assets-rtl/global/plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+    <script type="text/javascript" src="assets-rtl/global/plugins/select2/select2.min.js"></script>
     <script type="text/javascript" src="assets-rtl/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-
+    <script type="text/javascript" src="assets-rtl/global/plugins/ckeditor/ckeditor.js"></script>
     <script type="text/javascript" src="assets-rtl/global/plugins/bootstrap-markdown/js/bootstrap-markdown.js"></script>
     <script type="text/javascript" src="assets-rtl/global/plugins/bootstrap-markdown/lib/markdown.js"></script>
-    <script src="assets-rtl/admin/pages/scripts/components-form-tools.js"></script>
-
-
-    <!-- END PAGE LEVEL PLUGINS -->
-    <!-- BEGIN PAGE LEVEL PLUGINS -->
-    <script type="text/javascript" src="assets-rtl/global/plugins/select2/select2.min.js"></script>
     <!-- END PAGE LEVEL PLUGINS -->
     <!-- BEGIN PAGE LEVEL SCRIPTS -->
     <script src="assets-rtl/global/scripts/metronic.js" type="text/javascript"></script>
     <script src="assets-rtl/admin/layout3/scripts/layout.js" type="text/javascript"></script>
     <script src="assets-rtl/admin/layout3/scripts/demo.js" type="text/javascript"></script>
-    <script src="assets-rtl/admin/pages/scripts/form-wizard.js"></script>
+    <script src="assets-rtl/admin/pages/scripts/form-validation.js"></script>
     <script src="assets-rtl/admin/pages/scripts/components-pickers.js"></script>
 
 
@@ -1033,7 +770,7 @@ Author: Ahmed Saeed & Mohamed Sayed
             Metronic.init(); // init metronic core components
             Layout.init(); // init current layout
             Demo.init(); // init demo features
-            FormWizard.init();
+            FormValidation.init();
             ComponentsPickers.init();
 
         });
