@@ -714,23 +714,17 @@ Author: Ahmed Saeed & Mohamed Sayed
                                             <label class="control-label col-md-3">Meeting Description
                                             </label>
                                             <div class="col-md-4">
-                                                <textarea name="meeting_desc" type="text" class="form-control"></textarea>
+                                                <textarea name="meeting_desc" class="form-control"></textarea>
                                             </div>
                                         </div>
 
 
                                         <div class="form-group">
-                                            <label class="control-label col-md-3">Lawyer <span class="required">
-                                                    * </span>
-                                            </label>
+                                            <label class="control-label col-md-3">Lawyer
+                                                <span class="required">
+                                                    * </span></label>
                                             <div class="col-md-4">
-                                                <select class="form-control" name="select_lawyers" multiple>
-                                                    <option value="lawyer1">Suhaib</option>
-                                                    <option value="lawyer2">Tamer</option>
-                                                    <option value="lawyer3">Osama</option>
-                                                </select>
-                                                <span class="help-block">
-                                                    select max 3 options, min 1 option </span>
+                                                <input type="hidden" name="lawyer" id="select2_sample5" class="form-control select2" value="tamer, ahmed">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -852,6 +846,9 @@ Author: Ahmed Saeed & Mohamed Sayed
                 Demo.init(); // init demo features
                 FormValidation.init();
                 ComponentsPickers.init();
+                $("#select2_sample5").select2({
+                    tags: ["Mohamed", "Sayed", "tamer", "elnagar", "nothing"]
+                });
 
             });
         </script>

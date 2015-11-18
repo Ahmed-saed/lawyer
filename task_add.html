@@ -677,7 +677,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                 <textarea name="contract_description" class="form-control"></textarea>
                                             </div>
                                         </div>
-                                         <div class="form-group">
+                                        <div class="form-group">
                                             <label class="control-label col-md-3">Case <span class="required">
                                                     * </span>
                                             </label>
@@ -692,19 +692,12 @@ Author: Ahmed Saeed & Mohamed Sayed
                                         </div>
                                         <!-- END TASK DESC -->
                                         <div class="form-group">
-                                            <label class="control-label col-md-3">Task To <span class="required">
-                                                    * </span>
-                                            </label>
+                                            <label class="control-label col-md-3">Lawyer
+                                                <span class="required">
+                                                    * </span></label>
                                             <div class="col-md-4">
-                                                <select class="form-control" name="select_lawyers" multiple>
-                                                    <option value="lawyer1">Suhaib</option>
-                                                    <option value="lawyer2">Tamer</option>
-                                                    <option value="lawyer3">Osama</option>
-                                                </select>
-                                                <span class="help-block">
-                                                    select max 3 options, min 1 option </span>
+                                                <input type="hidden" name="lawyer" id="select2_sample5" class="form-control select2" value="tamer, ahmed">
                                             </div>
-
                                         </div>
 
                                         <!-- TASK DUE DATE -->
@@ -808,6 +801,9 @@ Author: Ahmed Saeed & Mohamed Sayed
                 Layout.init(); // init current layout
                 Demo.init(); // init demo features
                 ComponentsPickers.init();
+                $("#select2_sample5").select2({
+                    tags: ["Mohamed", "Sayed", "tamer", "elnagar", "nothing"]
+                });
 
             });
         </script>

@@ -13,7 +13,7 @@ Author: Ahmed Saeed & Mohamed Sayed
 
     <head>
         <meta charset="utf-8" />
-        <title>Lawyer | Add case</title>
+        <title>Lawyer | Add payment</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -432,7 +432,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                             <li>
                                 <a href="index.html">Dashboard</a>
                             </li>
-                            <li class="menu-dropdown mega-menu-dropdown active">
+                            <li class="menu-dropdown mega-menu-dropdown">
                                 <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;" class="dropdown-toggle">
                                     Add <i class="fa fa-angle-down"></i>
                                 </a>
@@ -447,7 +447,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                             <a href="add_lawyer.html" class="iconify">
                                                                 <i class="icon-user-follow"></i> Add lawyer </a>
                                                         </li>
-                                                        <li class="active">
+                                                        <li>
                                                             <a href="add_case.html" class="iconify">
                                                                 <i class="icon-folder-alt"></i> Add case </a>
                                                         </li>
@@ -516,7 +516,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                                     </li>
                                 </ul>
                             </li>
-                            <li class="menu-dropdown mega-menu-dropdown">
+                            <li class="menu-dropdown mega-menu-dropdown active">
                                 <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;" class="dropdown-toggle">
                                     Finance <i class="fa fa-angle-down"></i>
                                 </a>
@@ -530,7 +530,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                             <a href="ecommerce_orders.html" class="iconify">
                                                                 <i class="icon-tag"></i>payments  </a>
                                                         </li>
-                                                        <li>
+                                                        <li  class="active">
                                                             <a href="ecommerce_orders.html" class="iconify">
                                                                 <i class="icon-plus"></i>create payment  </a>
                                                         </li>
@@ -607,7 +607,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                 <div class="container">
                     <!-- BEGIN PAGE TITLE -->
                     <div class="page-title">
-                        <h1>Add new case</h1>
+                        <h1>Add new payment</h1>
                     </div>
                     <!-- END PAGE TITLE -->
                     <!-- BEGIN PAGE TOOLBAR -->
@@ -621,27 +621,7 @@ Author: Ahmed Saeed & Mohamed Sayed
         <!-- BEGIN PAGE CONTENT -->
         <div class="page-content">
             <div class="container">
-                <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-                <div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                                <h4 class="modal-title">Modal title</h4>
-                            </div>
-                            <div class="modal-body">
-                                Widget settings form goes here
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn blue">Save changes</button>
-                                <button type="button" class="btn default" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                        <!-- /.modal-content -->
-                    </div>
-                    <!-- /.modal-dialog -->
-                </div>
-                <!-- /.modal -->
+
                 <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
 
                 <!-- BEGIN PAGE CONTENT INNER -->
@@ -651,189 +631,102 @@ Author: Ahmed Saeed & Mohamed Sayed
                         <div class="portlet box green-meadow">
                             <div class="portlet-title">
                                 <div class="caption">
-                                    case information
+                                    Add payment
                                 </div>
 
                             </div>
-                            <div class="portlet-body form">
-                                <!-- BEGIN FORM-->
-                                <form action="javascript:;" id="form_sample_1" class="form-horizontal">
-                                    <div class="alert alert-danger display-hide">
-                                        <button class="close" data-close="alert"></button>
-                                        You have some form errors. Please check below.
-                                    </div>
-                                    <div class="alert alert-success display-hide">
-                                        <button class="close" data-close="alert"></button>
-                                        Your form validation is successful!
-                                    </div>
-                                    <br>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Case Name <span class="required">
-                                                * </span>
-                                        </label>
-                                        <div class="col-md-4">
-                                            <input type="text" name="case_name" data-required="1" class="form-control" />
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Case Arabic Name <span class="required">
-                                                * </span>
-                                        </label>
-                                        <div class="col-md-4">
-                                            <input name="arabic_name" type="text" class="form-control" />
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Client <span class="required">
-                                                * </span>
-                                        </label>
 
-
-                                        <div class="col-md-4">
-                                            <select class="form-control" name="client">
-                                                <option value="">select ...</option>
-                                                <option value="Alhamrany">Alhamrany</option>
-                                                <option value="Reda">Reda Abo gabl</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Case Type <span class="required">
-                                                * </span>
-                                        </label>
-
-
-                                        <div class="col-md-4">
-                                            <select class="form-control" name="case_type">
-                                                <option value="">select ...</option>
-                                                <option value="commerce">تجارية شركات</option>
-                                                <option value="newly">تأسيس شركة</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Case Sub Type
-                                        </label>
-
-
-                                        <div class="col-md-4">
-                                            <select class="form-control" name="case_type">
-                                                <option value="">select ...</option>
-                                                <option value="trade">تجارية </option>
-                                                <option value="commerce">مالية</option>
-                                                <option value="ta3weed">تعويضات</option>
-                                                <option value="money">حقوق مالية</option>
-                                                <option value="3ama">مقولات عامة</option>
-                                                <option value="handsya">هندسية</option>
-                                                <option value="adara">إدارية</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Case Contract Type <span class="required">
-                                                * </span>
-                                        </label>
-
-
-                                        <div class="col-md-4">
-                                            <select class="form-control" name="case_contract">
-                                                <option value="">select ...</option>
-                                                <option value="salary">عقد سنوى</option>
-                                                <option value="part">مبلغ مقطوع</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Case Place <span class="required">
-                                                * </span>
-                                        </label>
-                                        <div class="col-md-4">
-                                            <input name="case_place" type="text" class="form-control" />
-                                            <span class="help-block">
-                                                Jaddah Main court </span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Case Status <span class="required">
-                                                * </span>
-                                        </label>
-
-
-                                        <div class="col-md-4">
-                                            <select class="form-control" name="case_status">
-                                                <option value="">select ...</option>
-                                                <option value="active">مفعلة</option>
-                                                <option value="colsed_success">مغلقة ناجحة</option>
-                                                <option value="colsed_fail">مغلقة خاسرة</option>
-                                                <option value="colsed_client">مغلقة عدم التزام العميل</option>
-                                                <option value="colsed_other">مغلقة سبب اخر</option>
-
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Contract Description
-                                        </label>
-                                        <div class="col-md-4">
-                                            <textarea name="contract_description" class="form-control"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Extension Contract Description
-                                        </label>
-                                        <div class="col-md-4">
-                                            <textarea name="extension_description"  class="form-control"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Max Unpaid Payment <span class="required">
-                                                * </span>
-                                        </label>
-                                        <div class="col-md-4">
-                                            <input name="max_un" type="text" class="form-control" />
-                                            <span class="help-block">
-                                                100$ </span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Max Man Hours&nbsp;&nbsp;</label>
-                                        <div class="col-md-4">
-                                            <input name="max_hour" type="text" class="form-control" />
-                                            <span class="help-block">
-                                                number </span>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Lawyer
-                                        <span class="required">
-                                                * </span></label>
-                                        <div class="col-md-4">
-                                            <input type="hidden" name="lawyer" id="select2_sample5" class="form-control select2" value="tamer, ahmed">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Working Hours</label>
-                                        <div class="col-md-4">
-                                            <input name="work_hour" type="text" class="form-control" />
-
-                                        </div>
-                                    </div>
-
-                                    <div class="form-actions">
-                                        <div class="row">
-                                            <div class="col-md-offset-3 col-md-9">
-                                                <button type="submit" class="btn green">Submit</button>
-                                                <button type="button" class="btn default">Cancel</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                                <!-- END FORM-->
-                            </div>
                         </div>
+                        <div class="portlet-body form">
+                            <!-- BEGIN FORM-->
+                            <form action="javascript:;">
+
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label class="control-label col-md-4">Service Type <span class="required">
+                                                * </span>
+                                        </label>
+                                        <select class="form-control col-md-4" name="status">
+                                            <option value="">Select...</option>
+                                            <option value="money">عرض اتعاب</option>
+                                            <option value="Reda">مصاريف إدارية</option>
+                                            <option value="Reda">مصاريف حكومية</option>
+
+                                        </select>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3">Payment Value</label>
+                                        <div class="input-group col-md-4" >
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-envelope"></i>
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="Payment Value">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Payment Date<span class="required">
+                                                * </span></label>
+
+                                        <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
+                                            <input type="text" class="form-control" readonly name="paymentDate">
+                                            <span class="input-group-btn">
+                                                <button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
+                                            </span>
+
+                                            <!-- /input-group -->
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Payment Due Date<span class="required">
+                                                * </span></label>
+
+                                        <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
+                                            <input type="text" class="form-control" readonly name="paymentDue">
+                                            <span class="input-group-btn">
+                                                <button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
+                                            </span>
+
+                                            <!-- /input-group -->
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label">Payment Description</label>
+                                        <div class="input-icon">
+                                            <i class="fa fa-bell-o"></i>
+                                            <textarea  class="form-control" name="paymentDesc"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Payment Actor</label>
+                                        <div class="input-icon right">
+                                            <i class="fa fa-microphone"></i>
+                                            <input type="text" class="form-control" placeholder="Payment Actor" name="paymentActor">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Attachment</label>
+                                        <div class="input-icon right">
+                                            <i class="fa fa-microphone"></i>
+                                            <input type="file" class="form-control"  name="attachment">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="form-actions text-center">
+                                    <button type="submit" class="btn green">Submit</button>
+                                    <button type="button" data-dismiss="modal" class="btn default">Cancel</button>
+
+                                </div>
+                            </form>
+                            <!-- END FORM-->
+                        </div>
+
 
                     </div>
                 </div>
@@ -898,9 +791,6 @@ Author: Ahmed Saeed & Mohamed Sayed
                 Demo.init(); // init demo features
                 FormValidation.init();
                 ComponentsPickers.init();
-                $("#select2_sample5").select2({
-                    tags: ["Mohamed", "Sayed", "tamer", "elnagar", "nothing"]
-                });
 
             });
         </script>
