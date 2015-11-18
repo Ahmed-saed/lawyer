@@ -641,26 +641,12 @@ Author: Ahmed Saeed & Mohamed Sayed
                     <!-- /.modal-dialog -->
                 </div>
                 <!-- /.modal -->
-                <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-                <!-- BEGIN PAGE BREADCRUMB -->
-                <ul class="page-breadcrumb breadcrumb">
-                    <li>
-                        <a href="#">Home</a><i class="fa fa-circle"></i>
-                    </li>
-                    <li>
-                        <a href="form_wizard.html">Reports</a>
-                        <i class="fa fa-circle"></i>
-                    </li>
-                    <li class="active">
-                        Reports
-                    </li>
-                </ul>
-                <!-- END PAGE BREADCRUMB -->
+                
                 <!-- BEGIN PAGE CONTENT INNER -->
                 <div class="row">
                     <div class="col-md-12">
                         <div class="portlet-body">
-                            <div class="tabbable-line">
+                            <div class="tabbable-custom" style="margin:0">
                                 <ul class="nav nav-tabs ">
                                     <li class="active">
                                         <a href="#tab_15_1" data-toggle="tab">
@@ -695,24 +681,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                                     <div class="tab-pane active" id="tab_15_1">
                                         <div class="portlet light">
                                             <div class="portlet-body">
-                                        <div class="note note-info note-bordered">
-                                            <p>
-                                                <span class="label label-danger">
-					NOTE! </span>
-                                                <span>
-					<span class="bold">
-					Nestable List Plugin </span> supported in Firefox, Chrome, Opera, Safari, Internet Explorer 10 and Internet Explorer 9 only. Internet Explorer 8 not supported. </span>
-                                            </p>
-                                        </div>
                                        
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div class="margin-bottom-10" id="nestable_list_menu">
-                                                            <button type="button" class="btn" data-action="expand-all">Expand All</button>
-                                                            <button type="button" class="btn" data-action="collapse-all">Collapse All</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                               
                                                 <div class="row">
                                                     <div class="col-md-6">
@@ -724,12 +693,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                                 <div class="tools">
                                                                     <a href="javascript:;" class="collapse">
                                                                     </a>
-                                                                    <a href="#portlet-config" data-toggle="modal" class="config">
-                                                                    </a>
-                                                                    <a href="javascript:;" class="reload">
-                                                                    </a>
-                                                                    <a href="javascript:;" class="remove">
-                                                                    </a>
+                                                                   
                                                                 </div>
                                                             </div>
                                                             <div class="portlet-body ">
@@ -743,7 +707,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                                             <ol class="dd-list">
                                                                                 <li class="dd-item" data-id="1">
                                                                                     <div class="dd-handle">
-                                                                                        Full Name
+                                                                                           Full name
                                                                                     </div>
                                                                                 </li>
                                                                                 <li class="dd-item" data-id="2">
@@ -2319,8 +2283,6 @@ Author: Ahmed Saeed & Mohamed Sayed
             ComponentsPickers.init();
             TableManaged.init();
             UINestable.init();
-
-
         });
     </script>
     <!-- END JAVASCRIPTS -->
