@@ -8,46 +8,48 @@ Author: Ahmed Saeed & Mohamed Sayed
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
 <!--[if !IE]><!-->
 <html lang="en">
-<!--<![endif]-->
-<!-- BEGIN HEAD -->
+    <!--<![endif]-->
+    <!-- BEGIN HEAD -->
 
-<head>
-    <meta charset="utf-8" />
-    <title>Lawyer | Add case</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta content="" name="description" />
-    <meta content="" name="author" />
-    <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css">
-    <link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
-    <!-- END GLOBAL MANDATORY STYLES -->
-    <!-- BEGIN PAGE LEVEL STYLES -->
-    <link rel="stylesheet" type="text/css" href="assets/global/plugins/select2/select2.css" />
+    <head>
+        <meta charset="utf-8" />
+        <title>Lawyer | Show meeting</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css">
+        <link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN PAGE LEVEL STYLES -->
+        <link rel="stylesheet" type="text/css" href="assets/global/plugins/select2/select2.css" />
 
-    <link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-markdown/css/bootstrap-markdown.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" />
-    <!-- END PAGE LEVEL SCRIPTS -->
-    <!-- BEGIN THEME STYLES -->
-    <link href="assets/global/css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css">
-    <link href="assets/global/css/plugins.css" rel="stylesheet" type="text/css">
-    <link href="assets/admin/layout3/css/layout.css" rel="stylesheet" type="text/css">
-    <link href="assets/admin/layout3/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color">
-    <link href="assets/admin/layout3/css/custom.css" rel="stylesheet" type="text/css">
-    <!-- END THEME STYLES -->
-    <link rel="shortcut icon" href="favicon.ico" />
-</head>
-<!-- END HEAD -->
-<!-- BEGIN BODY -->
-<!-- DOC: Apply "page-header-menu-fixed" class to set the mega menu fixed  -->
-<!-- DOC: Apply "page-header-top-fixed" class to set the top menu fixed  -->
+        <link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-markdown/css/bootstrap-markdown.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css"/>
 
-<body>
-    <!-- BEGIN HEADER -->
+        <!-- END PAGE LEVEL SCRIPTS -->
+        <!-- BEGIN THEME STYLES -->
+        <link href="assets/global/css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css">
+        <link href="assets/global/css/plugins.css" rel="stylesheet" type="text/css">
+        <link href="assets/admin/layout3/css/layout.css" rel="stylesheet" type="text/css">
+        <link href="assets/admin/layout3/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color">
+        <link href="assets/admin/layout3/css/custom.css" rel="stylesheet" type="text/css">
+        <!-- END THEME STYLES -->
+        <link rel="shortcut icon" href="favicon.ico" />
+    </head>
+    <!-- END HEAD -->
+    <!-- BEGIN BODY -->
+    <!-- DOC: Apply "page-header-menu-fixed" class to set the mega menu fixed  -->
+    <!-- DOC: Apply "page-header-top-fixed" class to set the top menu fixed  -->
+
+    <body>
+        <!-- BEGIN HEADER -->
         <div class="page-header">
             <!-- BEGIN HEADER TOP -->
             <div class="page-header-top">
@@ -600,314 +602,381 @@ Author: Ahmed Saeed & Mohamed Sayed
             <!-- END HEADER MENU -->
         </div>
         <!-- END HEADER -->
-    <!-- BEGIN PAGE CONTAINER -->
-    <div class="page-container">
-        <!-- BEGIN PAGE HEAD -->
-        <div class="page-head">
+        <!-- BEGIN PAGE CONTAINER -->
+        <div class="page-container">
+            <!-- BEGIN PAGE HEAD -->
+            <div class="page-head">
+                <div class="container">
+                    <!-- BEGIN PAGE TITLE -->
+                    <div class="page-title">
+                        <h1>meetings </h1>
+                    </div>
+                    <!-- END PAGE TITLE -->
+                    <!-- BEGIN PAGE TOOLBAR -->
+
+                    <!-- END THEME PANEL -->
+                </div>
+                <!-- END PAGE TOOLBAR -->
+            </div>
+        </div>
+        <!-- END PAGE HEAD -->
+        <!-- BEGIN PAGE CONTENT -->
+        <div class="page-content">
             <div class="container">
-                <!-- BEGIN PAGE TITLE -->
-                <div class="page-title">
-                    <h1>Add new case</h1>
-                </div>
-                <!-- END PAGE TITLE -->
-                <!-- BEGIN PAGE TOOLBAR -->
+                <div class="row">
+                  <div class="col-md-6">
+                        <!-- BEGIN BORDERED TABLE PORTLET-->
+                        <div class="portlet light">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="fa fa-cogs font-green-sharp"></i>
+                                    <span class="caption-subject font-green-sharp bold uppercase">Meeting info</span>
+                                </div>
+                                <div class="tools">
+                                    <a href="javascript:;" class="collapse">
+                                    </a>
+                                    <a href="#portlet-config" data-toggle="modal" class="config">
+                                    </a>
 
-                <!-- END THEME PANEL -->
-            </div>
-            <!-- END PAGE TOOLBAR -->
-        </div>
-    </div>
-    <!-- END PAGE HEAD -->
-    <!-- BEGIN PAGE CONTENT -->
-    <div class="page-content">
-        <div class="container">
-            <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-            <div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                            <h4 class="modal-title">Modal title</h4>
-                        </div>
-                        <div class="modal-body">
-                            Widget settings form goes here
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn blue">Save changes</button>
-                            <button type="button" class="btn default" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                    <!-- /.modal-content -->
-                </div>
-                <!-- /.modal-dialog -->
-            </div>
-            <!-- /.modal -->
-            <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-
-            <!-- BEGIN PAGE CONTENT INNER -->
-            <div class="row">
-                <div class="col-md-12">
-
-                    <div class="portlet box green-meadow">
-                        <div class="portlet-title">
-                            <div class="caption">
-                                case information
+                                </div>
                             </div>
+                            <div class="portlet-body">
+                                <div class="table-scrollable">
+                                    <table class="table table-bordered table-hover">
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    Meeting Date 
+                                                </th>
+                                                <td>
+                                                    2015-11-10 08:00:00
+                                                </td>
 
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Meeting Description
+                                                </th>
+                                                <td>
+                                                    مقابلة للتشاور
+                                                    </td>
+
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Meeting Place Name
+                                                </th>
+                                                <td>
+                                                    DR. ADLI OFFICE
+                                                </td>
+
+                                            </tr>
+                                             <tr>
+                                                <th>
+                                                    Place Address
+                                                </th>
+                                                <td>
+                                                    king tower 1209
+                                                </td>
+
+                                            </tr>
+                                             <tr>
+                                                <th>
+                                                    Place Equipment
+                                                </th>
+                                                <td>
+                                                    full option
+                                                </td>
+
+                                            </tr>
+                                             <tr>
+                                                <th>
+                                                    Place Capacity
+                                                </th>
+                                                <td>
+                                                    4
+                                                </td>
+
+                                            </tr>
+                                   </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
-                        <div class="portlet-body form">
-                            <!-- BEGIN FORM-->
-                            <form action="javascript:;" id="form_sample_1" class="form-horizontal">
-                                <div class="alert alert-danger display-hide">
-                                    <button class="close" data-close="alert"></button>
-                                    You have some form errors. Please check below.
-                                </div>
-                                <div class="alert alert-success display-hide">
-                                    <button class="close" data-close="alert"></button>
-                                    Your form validation is successful!
-                                </div>
-                                <br>
-                                <div class="form-group">
-                                    <label class="control-label col-md-3">Case Name <span class="required">
-										* </span>
-                                    </label>
-                                    <div class="col-md-4">
-                                        <input type="text" name="case_name" data-required="1" class="form-control" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-md-3">Case Arabic Name <span class="required">
-										* </span>
-                                    </label>
-                                    <div class="col-md-4">
-                                        <input name="arabic_name" type="text" class="form-control" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-md-3">Client <span class="required">
-										* </span>
-                                    </label>
-
-
-                                    <div class="col-md-4">
-                                        <select class="form-control" name="client">
-                                            <option value="">select ...</option>
-                                            <option value="Alhamrany">Alhamrany</option>
-                                            <option value="Reda">Reda Abo gabl</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-md-3">Case Type <span class="required">
-										* </span>
-                                    </label>
-
-
-                                    <div class="col-md-4">
-                                        <select class="form-control" name="case_type">
-                                            <option value="">select ...</option>
-                                            <option value="commerce">تجارية شركات</option>
-                                            <option value="newly">تأسيس شركة</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-md-3">Case Sub Type
-                                    </label>
-
-
-                                    <div class="col-md-4">
-                                        <select class="form-control" name="case_type">
-                                            <option value="">select ...</option>
-                                            <option value="trade">تجارية </option>
-                                            <option value="commerce">مالية</option>
-                                            <option value="ta3weed">تعويضات</option>
-                                            <option value="money">حقوق مالية</option>
-                                                <option value="3ama">مقولات عامة</option>
-                                                <option value="handsya">هندسية</option>
-                                            <option value="adara">إدارية</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-md-3">Case Contract Type <span class="required">
-										* </span>
-                                    </label>
-
-
-                                    <div class="col-md-4">
-                                        <select class="form-control" name="case_contract">
-                                            <option value="">select ...</option>
-                                            <option value="salary">عقد سنوى</option>
-                                            <option value="part">مبلغ مقطوع</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-md-3">Case Place <span class="required">
-										* </span>
-                                    </label>
-                                    <div class="col-md-4">
-                                        <input name="case_place" type="text" class="form-control" />
-                                        <span class="help-block">
-										Jaddah Main court </span>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-md-3">Case Status <span class="required">
-										* </span>
-                                    </label>
-
-
-                                    <div class="col-md-4">
-                                        <select class="form-control" name="case_status">
-                                            <option value="">select ...</option>
-                                            <option value="active">مفعلة</option>
-                                            <option value="colsed_success">مغلقة ناجحة</option>
-                                            <option value="colsed_fail">مغلقة خاسرة</option>
-                                            <option value="colsed_client">مغلقة عدم التزام العميل</option>
-                                            <option value="colsed_other">مغلقة سبب اخر</option>
-
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-md-3">Contract Description
-                                    </label>
-                                    <div class="col-md-4">
-                                        <textarea name="contract_description" class="form-control"></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-md-3">Extension Contract Description
-                                    </label>
-                                    <div class="col-md-4">
-                                        <textarea name="extension_description"  class="form-control"></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-md-3">Max Unpaid Payment <span class="required">
-										* </span>
-                                    </label>
-                                    <div class="col-md-4">
-                                        <input name="max_un" type="text" class="form-control" />
-                                        <span class="help-block">
-											100$ </span>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-md-3">Max Man Hours&nbsp;&nbsp;</label>
-                                    <div class="col-md-4">
-                                        <input name="max_hour" type="text" class="form-control" />
-                                        <span class="help-block">
-											 number </span>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="control-label col-md-3">Lawyer <span class="required">
-										* </span>
-                                    </label>
-                                    <div class="col-md-4">
-                                        <select class="form-control" name="select_lawyers" multiple>
-                                            <option value="lawyer1">Suhaib</option>
-                                            <option value="lawyer2">Tamer</option>
-                                            <option value="lawyer3">Osama</option>
-                                        </select>
-                                        <span class="help-block">
-											select max 3 options, min 1 option </span>
-                                    </div>
-
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-md-3">Working Hours</label>
-                                    <div class="col-md-4">
-                                        <input name="work_hour" type="text" class="form-control" />
-
-                                    </div>
-                                </div>
-
-                                <div class="form-actions">
-                                    <div class="row">
-                                        <div class="col-md-offset-3 col-md-9">
-                                            <button type="submit" class="btn green">Submit</button>
-                                            <button type="button" class="btn default">Cancel</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                            <!-- END FORM-->
-                        </div>
+                        <!-- END BORDERED TABLE PORTLET-->
                     </div>
+                    <div class="col-md-6">
+                        <!-- BEGIN BORDERED TABLE PORTLET-->
+                        <div class="portlet light">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="fa fa-cogs font-green-sharp"></i>
+                                    <span class="caption-subject font-green-sharp bold uppercase">Client Info</span>
+                                </div>
+                                <div class="tools">
+                                    <a href="javascript:;" class="collapse">
+                                    </a>
+                                    <a href="#portlet-config" data-toggle="modal" class="config">
+                                    </a>
 
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                <div class="table-scrollable">
+                                    <table class="table table-bordered table-hover">
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    Client Full Name 
+                                                </th>
+                                                <td>
+                                                    Al-HAMRANY
+
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Client Email
+                                                </th>
+                                                <td>
+                                                    <a href="mailto:osama.elsewefi@gmail.com">osama.elsewefi@gmail.com</a>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Client Acceptance
+                                                </th>
+                                                <td>
+                                                    Not Yet
+                                                </td>
+
+                                            </tr>
+                                          <tr>
+                                                <th>
+                                                   Place Address
+                                                </th>
+                                                <td>
+                                                    jeddah
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Client Phone
+                                                </th>
+                                                <td>
+                                                    05000444774444
+                                                </td>
+
+                                            </tr>
+                                                  <tr>
+                                                <th>
+                                                    Client Mobile
+                                                </th>
+                                                <td>
+                                                    05000444774444
+                                                </td>
+
+                                            </tr>
+                                     </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END BORDERED TABLE PORTLET-->
+                    </div>
+             
                 </div>
+                <div class="row">
+                    <div class="col-md-12">
+                                    <div class="portlet light">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="fa fa-cogs font-green-sharp"></i>
+                                    <span class="caption-subject font-green-sharp bold uppercase">Lawyer Info</span>
+                                </div>
+                                <div class="tools">
+                                    <a href="javascript:;" class="collapse">
+                                    </a>
+                                    <a href="#portlet-config" data-toggle="modal" class="config">
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                <div class="table-scrollable">
+                                    <table class="table table-bordered table-hover">
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    Lawyer ID
+                                                </th>
+                                                <th>
+                                                   Full Name
+                                                </th>
+                                                <th>
+                                                    Acknowledge 
+                                                </th>
+                                                <th>
+                                                    Acknowledge Date
+                                                    </th>
+                                                <th>
+                                                    Lawyer Email
+                                                </th>
+                                          </tr>
+                                            <tr>
+                                                <td>
+                                                    2
+                                                </td>
+                                                <td>
+                                                    Tamer Elngar
+                                                </td>
+                                                <td>
+                                                    Not Yet
+                                                </td>
+                                                <td>
+                                                    2015-11-12 05:36:02	
+                                                </td>
+                                                <td>
+                                                    <a href="mailto:osama.elsewefi@gmail.com">osama.elsewefi@gmail.com</a>	
+                                                </td>
+                                                
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+             
+                    </div>
+                </div>
+
+                    <div class="row">
+                    <div class="col-md-12">
+                                    <div class="portlet light">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <i class="fa fa-cogs font-green-sharp"></i>
+                                    <span class="caption-subject font-green-sharp bold uppercase">Case Info</span>
+                                </div>
+                                <div class="tools">
+                                    <a href="javascript:;" class="collapse">
+                                    </a>
+                                    <a href="#portlet-config" data-toggle="modal" class="config">
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="portlet-body">
+                                <div class="table-scrollable">
+                                    <table class="table table-bordered table-hover">
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    Case #
+                                                </th>
+                                                <th>
+                                                   Case Client
+                                                </th>
+                                                <th>
+                                                    Case Type 
+                                                </th>
+                                                <th>
+                                                    Case Contract
+                                                    </th>
+                                              
+                                          </tr>
+                                            <tr>
+                                                <td>
+                                                    2
+                                                </td>
+                                                <td>
+                                                    Al-Hamrany
+                                                </td>
+                                                <td>
+                                                   قضايا عمالية
+                                                </td>
+                                                <td>
+                                                    عقد سنوى بالساعة
+                                                </td>
+                                                
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+             
+                    </div>
+                </div>
+
+                <!-- END PAGE CONTENT INNER -->
             </div>
-            <!-- END PAGE CONTENT INNER -->
         </div>
-    </div>
-    <!-- END PAGE CONTENT -->
+        <!-- END PAGE CONTENT -->
 
-    <!-- END PAGE CONTAINER -->
-    <!-- BEGIN FOOTER -->
-    <div class="page-footer">
-        <div class="container">
-            2015 &copy; Lawyer. <a href="ttp://demo.lawyer" title="Purchase Lawyer" target="_blank">Purchase Lawyer!</a>
+        <!-- END PAGE CONTAINER -->
+        <!-- BEGIN FOOTER -->
+        <div class="page-footer">
+            <div class="container">
+                2015 &copy; Lawyer. <a href="ttp://demo.lawyer" title="Purchase Lawyer" target="_blank">Purchase Lawyer!</a>
+            </div>
         </div>
-    </div>
-    <div class="scroll-to-top">
-        <i class="icon-arrow-up"></i>
-    </div>
-    <!-- END FOOTER -->
-    <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
-    <!-- BEGIN CORE PLUGINS -->
-    <!--[if lt IE 9]>
-        <script src="assets/global/plugins/respond.min.js"></script>
-        <script src="assets/global/plugins/excanvas.min.js"></script> 
-        <![endif]-->
-    <script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
-    <script src="assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
-    <!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
-    <script src="assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
-    <script src="assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
-    <script src="assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
-    <script src="assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
-    <script src="assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
-    <!-- END CORE PLUGINS -->
+        <div class="scroll-to-top">
+            <i class="icon-arrow-up"></i>
+        </div>
+        <!-- END FOOTER -->
+        <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+        <!-- BEGIN CORE PLUGINS -->
+        <!--[if lt IE 9]>
+            <script src="assets/global/plugins/respond.min.js"></script>
+            <script src="assets/global/plugins/excanvas.min.js"></script> 
+            <![endif]-->
+        <script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+        <!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+        <script src="assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+        <!-- END CORE PLUGINS -->
 
 
-    <!-- BEGIN PAGE LEVEL PLUGINS -->
-    <script type="text/javascript" src="assets/global/plugins/jquery-validation/js/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="assets/global/plugins/jquery-validation/js/additional-methods.min.js"></script>
-    <script type="text/javascript" src="assets/global/plugins/select2/select2.min.js"></script>
-    <script type="text/javascript" src="assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-    <script type="text/javascript" src="assets/global/plugins/ckeditor/ckeditor.js"></script>
-    <script type="text/javascript" src="assets/global/plugins/bootstrap-markdown/js/bootstrap-markdown.js"></script>
-    <script type="text/javascript" src="assets/global/plugins/bootstrap-markdown/lib/markdown.js"></script>
-    <!-- END PAGE LEVEL PLUGINS -->
-    <!-- BEGIN PAGE LEVEL SCRIPTS -->
-    <script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
-    <script src="assets/admin/layout3/scripts/layout.js" type="text/javascript"></script>
-    <script src="assets/admin/layout3/scripts/demo.js" type="text/javascript"></script>
-    <script src="assets/admin/pages/scripts/form-validation.js"></script>
-    <script src="assets/admin/pages/scripts/components-pickers.js"></script>
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script type="text/javascript" src="assets/global/plugins/jquery-validation/js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="assets/global/plugins/jquery-validation/js/additional-methods.min.js"></script>
+        <script type="text/javascript" src="assets/global/plugins/select2/select2.min.js"></script>
+        <script type="text/javascript" src="assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+        <script type="text/javascript" src="assets/global/plugins/ckeditor/ckeditor.js"></script>
+        <script type="text/javascript" src="assets/global/plugins/bootstrap-markdown/js/bootstrap-markdown.js"></script>
+        <script type="text/javascript" src="assets/global/plugins/bootstrap-markdown/lib/markdown.js"></script>
+        <script type="text/javascript" src="assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
+        <script src="assets/admin/layout3/scripts/layout.js" type="text/javascript"></script>
+        <script src="assets/admin/layout3/scripts/demo.js" type="text/javascript"></script>
+        <script src="assets/admin/pages/scripts/components-pickers.js"></script>
 
 
-    <!-- END PAGE LEVEL SCRIPTS -->
-    <script>
-        jQuery(document).ready(function() {
-            // initiate layout and plugins
-            Metronic.init(); // init metronic core components
-            Layout.init(); // init current layout
-            Demo.init(); // init demo features
-            FormValidation.init();
-            ComponentsPickers.init();
+        <!-- END PAGE LEVEL SCRIPTS -->
+        <script>
+            jQuery(document).ready(function () {
+                // initiate layout and plugins
+                Metronic.init(); // init metronic core components
+                Demo.init(); // init demo features
+                ComponentsPickers.init();
 
-        });
-    </script>
-    <!-- END JAVASCRIPTS -->
-</body>
-<!-- END BODY -->
+            });
+        </script>
+        <!-- END JAVASCRIPTS -->
+    </body>
+    <!-- END BODY -->
 
 </html>
