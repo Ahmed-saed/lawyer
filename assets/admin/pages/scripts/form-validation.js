@@ -1,7 +1,7 @@
-var FormValidation = function() {
+var FormValidation = function () {
 
     // basic validation
-    var handleValidation1 = function() {
+    var handleValidation1 = function () {
         // for more info visit the official plugin documentation: 
         // http://docs.jquery.com/Plugins/Validation
 
@@ -27,12 +27,19 @@ var FormValidation = function() {
                 },
                 arabic_name: {
                     minlength: 2,
+                    digits: false,
+                    required: true
+
+                },
+                lawyer: {
+                    minlength: 2,
+                    digits: false,
                     required: true
 
                 },
                 client: {
-                    required: true
-
+                    required: true,
+                    digits: false
                 },
                 case_type: {
                     required: true
@@ -70,44 +77,38 @@ var FormValidation = function() {
                 meeting_place: {
                     required: true
                 },
-                 select_case: {
+                select_case: {
                     required: true
                 },
-                 meeting_date: {
+                meeting_date: {
                     required: true
                 },
-                 meeting_time: {
+                meeting_time: {
                     required: true
                 },
                 select_lawyers: {
                     required: true,
-                    minlength: 1,
-                    maxlength: 3
+                    digits: false
                 }
             },
-
-            invalidHandler: function(event, validator) { //display error alert on form submit              
+            invalidHandler: function (event, validator) { //display error alert on form submit              
                 success1.hide();
                 error1.show();
                 Metronic.scrollTo(error1, -200);
             },
-
-            highlight: function(element) { // hightlight error inputs
+            highlight: function (element) { // hightlight error inputs
                 $(element)
-                    .closest('.form-group').addClass('has-error'); // set error class to the control group
+                        .closest('.form-group').addClass('has-error'); // set error class to the control group
             },
-
-            unhighlight: function(element) { // revert the change done by hightlight
+            unhighlight: function (element) { // revert the change done by hightlight
                 $(element)
-                    .closest('.form-group').removeClass('has-error'); // set error class to the control group
+                        .closest('.form-group').removeClass('has-error'); // set error class to the control group
             },
-
-            success: function(label) {
+            success: function (label) {
                 label
-                    .closest('.form-group').removeClass('has-error'); // set success class to the control group
+                        .closest('.form-group').removeClass('has-error'); // set success class to the control group
             },
-
-            submitHandler: function(form) {
+            submitHandler: function (form) {
                 success1.show();
                 error1.hide();
             }
@@ -117,7 +118,7 @@ var FormValidation = function() {
     }
 
     // validation using icons
-    var handleValidation2 = function() {
+    var handleValidation2 = function () {
         // for more info visit the official plugin documentation: 
         // http://docs.jquery.com/Plugins/Validation
 
@@ -160,37 +161,31 @@ var FormValidation = function() {
                     creditcard: true
                 },
             },
-
-            invalidHandler: function(event, validator) { //display error alert on form submit              
+            invalidHandler: function (event, validator) { //display error alert on form submit              
                 success2.hide();
                 error2.show();
                 Metronic.scrollTo(error2, -200);
             },
-
-            errorPlacement: function(error, element) { // render error placement for each input type
+            errorPlacement: function (error, element) { // render error placement for each input type
                 var icon = $(element).parent('.input-icon').children('i');
                 icon.removeClass('fa-check').addClass("fa-warning");
                 icon.attr("data-original-title", error.text()).tooltip({
                     'container': 'body'
                 });
             },
-
-            highlight: function(element) { // hightlight error inputs
+            highlight: function (element) { // hightlight error inputs
                 $(element)
-                    .closest('.form-group').removeClass("has-success").addClass('has-error'); // set error class to the control group   
+                        .closest('.form-group').removeClass("has-success").addClass('has-error'); // set error class to the control group   
             },
-
-            unhighlight: function(element) { // revert the change done by hightlight
+            unhighlight: function (element) { // revert the change done by hightlight
 
             },
-
-            success: function(label, element) {
+            success: function (label, element) {
                 var icon = $(element).parent('.input-icon').children('i');
                 $(element).closest('.form-group').removeClass('has-error').addClass('has-success'); // set success class to the control group
                 icon.removeClass("fa-warning").addClass("fa-check");
             },
-
-            submitHandler: function(form) {
+            submitHandler: function (form) {
                 success2.show();
                 error2.hide();
                 form[0].submit(); // submit the form
@@ -201,7 +196,7 @@ var FormValidation = function() {
     }
 
     // advance validation
-    var handleValidation3 = function() {
+    var handleValidation3 = function () {
         // for more info visit the official plugin documentation: 
         // http://docs.jquery.com/Plugins/Validation
 
@@ -210,7 +205,7 @@ var FormValidation = function() {
         var success3 = $('.alert-success', form3);
 
         //IMPORTANT: update CKEDITOR textarea with actual content before submit
-        form3.on('submit', function() {
+        form3.on('submit', function () {
             for (var instanceName in CKEDITOR.instances) {
                 CKEDITOR.instances[instanceName].updateElement();
             }
@@ -262,8 +257,7 @@ var FormValidation = function() {
                     required: true
                 }
             },
-
-            messages: { // custom messages for radio buttons and checkboxes
+            messages: {// custom messages for radio buttons and checkboxes
                 membership: {
                     required: "Please select a Membership type"
                 },
@@ -272,8 +266,7 @@ var FormValidation = function() {
                     minlength: jQuery.validator.format("Please select  at least {0} types of Service")
                 }
             },
-
-            errorPlacement: function(error, element) { // render error placement for each input type
+            errorPlacement: function (error, element) { // render error placement for each input type
                 if (element.parent(".input-group").size() > 0) {
                     error.insertAfter(element.parent(".input-group"));
                 } else if (element.attr("data-error-container")) {
@@ -290,29 +283,24 @@ var FormValidation = function() {
                     error.insertAfter(element); // for other inputs, just perform default behavior
                 }
             },
-
-            invalidHandler: function(event, validator) { //display error alert on form submit   
+            invalidHandler: function (event, validator) { //display error alert on form submit   
                 success3.hide();
                 error3.show();
                 Metronic.scrollTo(error3, -200);
             },
-
-            highlight: function(element) { // hightlight error inputs
+            highlight: function (element) { // hightlight error inputs
                 $(element)
-                    .closest('.form-group').addClass('has-error'); // set error class to the control group
+                        .closest('.form-group').addClass('has-error'); // set error class to the control group
             },
-
-            unhighlight: function(element) { // revert the change done by hightlight
+            unhighlight: function (element) { // revert the change done by hightlight
                 $(element)
-                    .closest('.form-group').removeClass('has-error'); // set error class to the control group
+                        .closest('.form-group').removeClass('has-error'); // set error class to the control group
             },
-
-            success: function(label) {
+            success: function (label) {
                 label
-                    .closest('.form-group').removeClass('has-error'); // set success class to the control group
+                        .closest('.form-group').removeClass('has-error'); // set success class to the control group
             },
-
-            submitHandler: function(form) {
+            submitHandler: function (form) {
                 success3.show();
                 error3.hide();
                 form[0].submit(); // submit the form
@@ -321,12 +309,12 @@ var FormValidation = function() {
         });
 
         //apply validation on select2 dropdown value change, this only needed for chosen dropdown integration.
-        $('.select2me', form3).change(function() {
+        $('.select2me', form3).change(function () {
             form3.validate().element($(this)); //revalidate the chosen dropdown value and show error or success message for the input
         });
 
         // initialize select2 tags
-        $("#select2_tags").change(function() {
+        $("#select2_tags").change(function () {
             form3.validate().element($(this)); //revalidate the chosen dropdown value and show error or success message for the input 
         }).select2({
             tags: ["red", "green", "blue", "yellow", "pink"]
@@ -337,12 +325,12 @@ var FormValidation = function() {
             rtl: Metronic.isRTL(),
             autoclose: true
         });
-        $('.date-picker .form-control').change(function() {
+        $('.date-picker .form-control').change(function () {
             form3.validate().element($(this)); //revalidate the chosen dropdown value and show error or success message for the input 
         })
     }
 
-    var handleWysihtml5 = function() {
+    var handleWysihtml5 = function () {
         if (!jQuery().wysihtml5) {
 
             return;
@@ -357,7 +345,7 @@ var FormValidation = function() {
 
     return {
         //main function to initiate the module
-        init: function() {
+        init: function () {
 
             handleWysihtml5();
             handleValidation1();

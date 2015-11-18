@@ -1020,3 +1020,15 @@ var Metronic = function() {
     };
 
 }();
+
+   $(document).ready(function(){
+        
+           $(".mega_search_icon").click(function () {
+              
+            
+                    $("#meaga_Search").toggle(300);
+                
+              
+               
+            });
+    });
