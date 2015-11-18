@@ -57,11 +57,8 @@ Author: Ahmed Saeed & Mohamed Sayed
 <!-- DOC: Apply "page-header-top-fixed" class to set the top menu fixed  -->
 
 <body>
-<<<<<<< HEAD
-=======
     <!-- BEGIN HEADER -->
    
->>>>>>> origin/master
     <!-- BEGIN HEADER -->
     <div class="page-header">
         <!-- BEGIN HEADER TOP -->
@@ -798,6 +795,22 @@ Author: Ahmed Saeed & Mohamed Sayed
                                 </li>
                             </ul>
                         </li>
+                                     <!-- BEGIN LANGUAGE DROPDOWN -->
+                            <li class="dropdown dropdown-language dropdown-dark">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <img alt="" src="assets/global/img/flags/us.png">
+                                    <span class="langname">US</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-default">
+
+                                    <li>
+                                        <a href="javascript:;">
+                                            <img alt="" src="assets/global/img/flags/eg.png"> العربية </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <!-- END LANGUAGE DROPDOWN -->
                         <!-- END TODO DROPDOWN -->
                         <li class="droddown dropdown-separator">
                             <span class="separator"></span>
@@ -936,63 +949,213 @@ Author: Ahmed Saeed & Mohamed Sayed
             </div>
         </div>
         <!-- END HEADER TOP -->
+
         <!-- BEGIN HEADER MENU -->
         <div class="page-header-menu">
             <div class="container">
-                <!-- BEGIN HEADER SEARCH BOX -->
-                <form class="search-form" action="extra_search.html" method="GET">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search" name="query">
-                        <span class="input-group-btn">
-                                <a href="javascript:;" class="btn submit"><i class="icon-magnifier"></i></a>
-                            </span>
-                    </div>
-                </form>
-                <!-- END HEADER SEARCH BOX -->
+
                 <!-- BEGIN MEGA MENU -->
                 <!-- DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background -->
                 <!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the dropdown opening on mouse hover -->
                 <div class="hor-menu ">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="javascript:;">Dashboard</a>
-                        </li>
-                    </ul>
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="index.html">Dashboard</a>
+                            </li>
+                            <li class="menu-dropdown mega-menu-dropdown active">
+                                <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;" class="dropdown-toggle">
+                                    Add <i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="mega-menu-content">
+                                            <div class="row">
+                                                <div class="">
+                                                    <ul class="mega-menu-submenu">
+
+                                                        <li>
+                                                            <a href="add_lawyer.html" class="iconify">
+                                                                <i class="icon-user-follow"></i> Add lawyer </a>
+                                                        </li>
+                                                        <li class="active">
+                                                            <a href="add_case.html" class="iconify">
+                                                                <i class="icon-folder-alt"></i> Add case </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="add_meeting.html" class="iconify ">
+                                                                <i class="icon-users"></i> Add meeting </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="add_client.html" class="iconify">
+                                                                <i class="icon-briefcase"></i> Add Client </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="add_client.html" class="iconify">
+                                                                <i class="icon-calendar"></i> Add task </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="add_client.html" class="iconify">
+                                                                <i class="icon-doc"></i> Follow up </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-dropdown mega-menu-dropdown">
+                                <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;" class="dropdown-toggle">
+                                    Browse <i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="mega-menu-content">
+                                            <div class="row">
+                                                <div>
+                                                    <ul class="mega-menu-submenu">
+
+                                                        <li>
+                                                            <a href="ecommerce_orders.html" class="iconify">
+                                                                <i class="icon-user-follow"></i>Lawyers  </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ecommerce_orders.html" class="iconify">
+                                                                <i class="icon-folder-alt"></i>Cases</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ecommerce_orders.html" class="iconify">
+                                                                <i class="icon-users"></i>Meetings</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ecommerce_orders.html" class="iconify">
+                                                                <i class="icon-briefcase"></i>Clients</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ecommerce_orders.html" class="iconify">
+                                                                <i class="icon-calendar"></i>Tasks</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ecommerce_orders.html" class="iconify">
+                                                                <i class="icon-doc"></i>Followups</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-dropdown mega-menu-dropdown">
+                                <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;" class="dropdown-toggle">
+                                    Finance <i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="mega-menu-content">
+                                            <div class="row">
+                                                <div>
+                                                    <ul class="mega-menu-submenu">
+                                                        <li>
+                                                            <a href="ecommerce_orders.html" class="iconify">
+                                                                <i class="icon-tag"></i>payments  </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ecommerce_orders.html" class="iconify">
+                                                                <i class="icon-plus"></i>create payment  </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="ecommerce_orders.html" class="iconify">
+                                                                <i class="icon-plus"></i>create invoice</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ecommerce_orders.html" class="iconify">
+                                                                <i class="icon-list"></i>invoices  </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="ecommerce_orders.html" class="iconify">
+                                                                <i class="icon-plus"></i>create down payment</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ecommerce_orders.html" class="iconify">
+                                                                <i class="fa fa-money"></i>Down payment</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ecommerce_orders.html" class="iconify">
+                                                                <i class="icon-wallet"></i>Client Balance</a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-dropdown mega-menu-dropdown">
+                                <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;" class="dropdown-toggle">
+                                    Admin <i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="mega-menu-content">
+                                            <div class="row">
+                                                <div>
+                                                    <ul class="mega-menu-submenu">
+
+                                                        <li>
+                                                            <a href="ecommerce_orders.html" class="iconify">
+                                                                <i class="icon-settings"></i>Administration  </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="ecommerce_orders.html" class="iconify">
+                                                                <i class="icon-docs"></i>Reports</a>
+                                                        </li>
+
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+               
+            </div>
+        </div>
+        <!-- END HEADER MENU -->
+
+        <!-- START MEGA SEARCH -->
+
+
+        <div class="mega_search">
+            <div class="mega_search_icon"><span class="icon-magnifier"></span></div>
+            <div class="container" id="meaga_Search">
+                <div class="row">
+
+                    <div class="col-sm-2">
+                        <select class="mega_search_select">
+                            <option>lawyers</option>
+                            <option>lawyers</option>
+                            <option>lawyers</option>
+                        </select>
+                    </div>
+
+                    <div class="col-sm-8">
+                        <input type="text" placeholder="enter case number or name" class="mega_search_text_input">
+                    </div>
+
+                    <div class="col-sm-2">
+                        <button type="submit" class=" mega_search_btn">search</button>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </div>
-    <!-- END HEADER -->
-
-
-    <!-- BEGIN PAGE CONTAINER -->
-    <div class="page-container">
-
-
-        <!-- BEGIN PAGE HEAD -->
-        <div class="page-head">
-            <div class="container">
-                <!-- BEGIN PAGE TITLE -->
-                <div class="page-title">
-                    <h1>Case Name <small>#12114</small></h1>
-                </div>
-                <!-- END PAGE TITLE -->
-                <!-- BEGIN PAGE TOOLBAR -->
-                <div class="page-toolbar" style="padding-top:26px;">
-                    <!-- BEGIN THEME PANEL -->
-                    <span class="label label-primary">working</span>
-                    <!-- use this other labels for other case statuses
-                    <span class="label label-success">win </span>
-                    <span class="label label-danger">lose </span>
-                    <span class="label label-default">Default </span>
-                    -->
-                    <!-- END THEME PANEL -->
-                </div>
-                <!-- END PAGE TOOLBAR -->
-            </div>
-        </div>
-<<<<<<< HEAD
-=======
         <!-- END MEGA SEARCH -->
     </div>
     <!-- END HEADER -->
@@ -1023,7 +1186,6 @@ Author: Ahmed Saeed & Mohamed Sayed
                 <!-- END PAGE TOOLBAR -->
             </div>
         </div>
->>>>>>> origin/master
         <!-- END PAGE HEAD -->
 
 
@@ -1069,7 +1231,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                                 <div class="tab-content">
 
                                     <!-- Begin Basic info tab -->
-                                    <div class="tab-pane" id="tab_1_1_1">
+                                    <div class="tab-pane active" id="tab_1_1_1">
 
                                         <h3><strong>Divorce Case </strong><small style="color:#9eacb4;">#12114</small>
                                             <strong><a href="javascript:;" title="edit case"><span class="icon-pencil" style="padding:0 4px;"></span></a></strong>
@@ -2057,7 +2219,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
                                     <!-- End mails tab -->
 
                                     <!-- begin Timeline tab -->
-                                    <div class="tab-pane active" id="tab_1_1_8">
+                                    <div class="tab-pane" id="tab_1_1_8">
 
                                         <!-- BEGIN PAGE CONTENT INNER -->
                                         <div class="portlet light">
