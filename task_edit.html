@@ -13,7 +13,7 @@ Author: Ahmed Saeed & Mohamed Sayed
 
     <head>
         <meta charset="utf-8" />
-        <title>Lawyer | Add follow up</title>
+        <title>Lawyer | Add task</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -28,11 +28,11 @@ Author: Ahmed Saeed & Mohamed Sayed
         <!-- END GLOBAL MANDATORY STYLES -->
         <!-- BEGIN PAGE LEVEL STYLES -->
         <link rel="stylesheet" type="text/css" href="assets/global/plugins/select2/select2.css" />
+        <link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css"/>
 
         <link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-markdown/css/bootstrap-markdown.min.css">
         <link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" />
-        <link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css"/>
-
         <!-- END PAGE LEVEL SCRIPTS -->
         <!-- BEGIN THEME STYLES -->
         <link href="assets/global/css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css">
@@ -49,8 +49,8 @@ Author: Ahmed Saeed & Mohamed Sayed
     <!-- DOC: Apply "page-header-top-fixed" class to set the top menu fixed  -->
 
     <body>
-        
-        <!-- BEGIN HEADER -->
+
+         <!-- BEGIN HEADER -->
         <div class="page-header">
             <!-- BEGIN HEADER TOP -->
             <div class="page-header-top">
@@ -1145,7 +1145,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                 <div class="container">
                     <!-- BEGIN PAGE TITLE -->
                     <div class="page-title">
-                        <h1>Add Follow up</h1>
+                        <h1>Edit task</h1>
                     </div>
                     <!-- END PAGE TITLE -->
                     <!-- BEGIN PAGE TOOLBAR -->
@@ -1189,130 +1189,121 @@ Author: Ahmed Saeed & Mohamed Sayed
                         <div class="portlet box green-meadow">
                             <div class="portlet-title">
                                 <div class="caption">
-                                    Follow up information
+                                    task information
                                 </div>
 
                             </div>
                             <div class="portlet-body form">
-                                <!-- BEGIN FORM-->
-                                <form action="javascript:;" id="form_sample_1" class="form-horizontal">
-                                    <div class="alert alert-danger display-hide">
-                                        <button class="close" data-close="alert"></button>
-                                        You have some form errors. Please check below.
-                                    </div>
-                                    <div class="alert alert-success display-hide">
-                                        <button class="close" data-close="alert"></button>
-                                        Your form validation is successful!
-                                    </div>
-                                    <br>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Lawyer <span class="required">
-                                                * </span>
-                                        </label>
-                                        <div class="col-md-4">
-                                            <select class="form-control" name="select_lawyers">
-                                                <option value="lawyer1">Suhaib</option>
-                                                <option value="lawyer2">Tamer</option>
-                                                <option value="lawyer3">Osama</option>
-                                            </select>
+                                <form action="javascript:;" class="form-horizontal">
+                                    <!-- TASK HEAD -->
+                                    <div class="form">
+                                        <!-- TASK TITLE -->
+                                              <div class="form-group">
+                                            <label class="control-label col-md-3">Task Type <span class="required">
+                                                    * </span>
+                                            </label>
+                                            <div class="col-md-4">
+                                                <select class="form-control" name="select_lawyers">
+                                                    <option value="lawyer1">مقابلة</option>
+                                                    <option value="lawyer2">متابعة قضية</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                        <!-- TASK DESC -->
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3">Task Description
+                                            </label>
+                                            <div class="col-md-4">
+                                                <textarea name="contract_description" class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3">Case <span class="required">
+                                                    * </span>
+                                            </label>
+                                            <div class="col-md-4">
+                                                <select class="form-control" name="select_lawyers">
+                                                    <option value="lawyer1">Case #1125</option>
+                                                    <option value="lawyer2">Case 6655</option>
+                                                    <option value="lawyer3">Case 55874</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3">Client <span class="required">
+                                                    * </span>
+                                            </label>
+                                            <div class="col-md-4">
+                                                <select class="form-control" name="select_lawyers">
+                                                    <option value="lawyer1">Homrany</option>
+                                                    <option value="lawyer2">ahmed</option>
+                                                    <option value="lawyer3">Gamal</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                        <!-- END TASK DESC -->
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3">Lawyer
+                                                <span class="required">
+                                                    * </span></label>
+                                            <div class="col-md-4">
+                                                <input type="hidden" name="lawyer" id="select2_sample5" class="form-control select2" value="tamer, ahmed">
+                                            </div>
                                         </div>
 
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Follow up Type
-                                        </label>
+                                        <!-- TASK DUE DATE -->
 
 
-                                        <div class="col-md-4">
-                                            <select class="form-control" name="case_type">
-                                                <option value="">select ...</option>
-                                                <option value="trade">تقرير جلسة </option>
-                                                <option value="commerce">مذكرة قضائية</option>
-                                                <option value="ta3weed">لائحة دعوى</option>
-                                                <option value="money"> تقرير اجتماع</option>
-                                                <option value="3ama"> meeting</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Follow up From Date</label>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3">Task Due Date</label>
 
-                                        <div class="col-md-3">
-
-                                              <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
+                                            <div class="col-md-3">
+                                                <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
                                                     <input type="text" class="form-control" readonly name="meeting_date">
                                                     <span class="input-group-btn">
                                                         <button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
                                                     </span>
                                                 </div>
+                                            </div>
+                                            <div class="form-group">
+
+                                                <div class="col-md-3">
+                                                    <div class="input-icon">
+                                                        <i class="fa fa-clock-o"></i>
+                                                        <input name="meeting_time" type="text" class="form-control timepicker timepicker-default">
+                                                    </div>
+                                                    <span class="help-block">
+                                                        select a time </span>
+                                                </div>
+                                            </div>
+
+                                        </div> 
+                                           <div class="form-group">
+                                            <label class="control-label col-md-3">Task Description
+                                            </label>
+                                            <div class="col-md-4">
+                                                <input type="text" name="contract_description" class="form-control">
+                                            </div>
                                         </div>
                                         <div class="form-group">
-                                            <div class="col-md-3">
-                                                <div class="input-icon">
-                                                    <i class="fa fa-clock-o"></i>
-                                                    <input name="meeting_time" type="text" class="form-control timepicker timepicker-default">
-                                                </div>
-                                                <span class="help-block">
-                                                    select a time </span>
+                                            <label class="control-label col-md-3">Task Attachment <span class="required">
+                                                    * </span>
+                                            </label>
+                                            <div class="col-md-4">
+                                                <input type="file" >
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Follow up To Date</label>
 
-                                        <div class="col-md-3">
-                                             <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
-                                                    <input type="text" class="form-control" readonly name="meeting_date">
-                                                    <span class="input-group-btn">
-                                                        <button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
-                                                    </span>
-                                                </div>
-                                        </div>
-                                        <div class="form-group">
-
-                                            <div class="col-md-3">
-                                                <div class="input-icon">
-                                                    <i class="fa fa-clock-o"></i>
-                                                    <input name="meeting_time" type="text" class="form-control timepicker timepicker-default">
-                                                </div>
-                                                <span class="help-block">
-                                                    select a time </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Follow up Expenses</label>
-                                        <div class="col-md-4">
-                                            <input name="work_hour" type="text" class="form-control" />
-
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Follow up Descrption</label>
-                                        <div class="col-md-4">
-                                            <textarea name="work_hour"  class="form-control" ></textarea>
-
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Follow up Note</label>
-                                        <div class="col-md-4">
-                                            <textarea name="work_hour"  class="form-control" ></textarea>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="form-actions">
-                                        <div class="row">
-                                            <div class="col-md-offset-3 col-md-9">
-                                                <button type="submit" class="btn green">Submit</button>
-                                                <button type="button" class="btn default">Cancel</button>
-                                            </div>
+                                        </div><!-- TASK TAGS -->
+                                        <div class="form-actions right todo-form-actions">
+                                            <button class="btn btn-circle btn-sm green-haze">Save Changes</button>
+                                            <button class="btn btn-circle btn-sm btn-default">Cancel</button>
                                         </div>
                                     </div>
                                 </form>
-                                <!-- END FORM-->
+
                             </div>
                         </div>
 
@@ -1357,17 +1348,19 @@ Author: Ahmed Saeed & Mohamed Sayed
         <script type="text/javascript" src="assets/global/plugins/jquery-validation/js/jquery.validate.min.js"></script>
         <script type="text/javascript" src="assets/global/plugins/jquery-validation/js/additional-methods.min.js"></script>
         <script type="text/javascript" src="assets/global/plugins/select2/select2.min.js"></script>
-        <script type="text/javascript" src="assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+        <script type="text/javascript" src="assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
         <script type="text/javascript" src="assets/global/plugins/ckeditor/ckeditor.js"></script>
         <script type="text/javascript" src="assets/global/plugins/bootstrap-markdown/js/bootstrap-markdown.js"></script>
         <script type="text/javascript" src="assets/global/plugins/bootstrap-markdown/lib/markdown.js"></script>
-        <script type="text/javascript" src="assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+        <script type="text/javascript" src="assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+        <script type="text/javascript" src="assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js"></script>
 
         <!-- END PAGE LEVEL PLUGINS -->
         <!-- BEGIN PAGE LEVEL SCRIPTS -->
         <script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
         <script src="assets/admin/layout3/scripts/layout.js" type="text/javascript"></script>
         <script src="assets/admin/layout3/scripts/demo.js" type="text/javascript"></script>
+
         <script src="assets/admin/pages/scripts/components-pickers.js"></script>
 
 
@@ -1379,6 +1372,9 @@ Author: Ahmed Saeed & Mohamed Sayed
                 Layout.init(); // init current layout
                 Demo.init(); // init demo features
                 ComponentsPickers.init();
+                $("#select2_sample5").select2({
+                    tags: ["Mohamed", "Sayed", "tamer", "elnagar", "nothing"]
+                });
 
             });
         </script>

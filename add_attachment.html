@@ -13,7 +13,7 @@ Author: Ahmed Saeed & Mohamed Sayed
 
     <head>
         <meta charset="utf-8" />
-        <title>Lawyer | Add follow up</title>
+        <title>Lawyer | Add attachment</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -49,7 +49,7 @@ Author: Ahmed Saeed & Mohamed Sayed
     <!-- DOC: Apply "page-header-top-fixed" class to set the top menu fixed  -->
 
     <body>
-        
+
         <!-- BEGIN HEADER -->
         <div class="page-header">
             <!-- BEGIN HEADER TOP -->
@@ -1145,7 +1145,7 @@ Author: Ahmed Saeed & Mohamed Sayed
                 <div class="container">
                     <!-- BEGIN PAGE TITLE -->
                     <div class="page-title">
-                        <h1>Add Follow up</h1>
+                        <h1>Add attachment</h1>
                     </div>
                     <!-- END PAGE TITLE -->
                     <!-- BEGIN PAGE TOOLBAR -->
@@ -1206,99 +1206,18 @@ Author: Ahmed Saeed & Mohamed Sayed
                                     </div>
                                     <br>
                                     <div class="form-group">
-                                        <label class="control-label col-md-3">Lawyer <span class="required">
+                                        <label class="control-label col-md-3">Attachment name <span class="required">
                                                 * </span>
                                         </label>
+                                        <input name="attachment_name" type="text" class="form-control" />
+
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3">Attachment</label>
                                         <div class="col-md-4">
-                                            <select class="form-control" name="select_lawyers">
-                                                <option value="lawyer1">Suhaib</option>
-                                                <option value="lawyer2">Tamer</option>
-                                                <option value="lawyer3">Osama</option>
-                                            </select>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Follow up Type
-                                        </label>
-
-
-                                        <div class="col-md-4">
-                                            <select class="form-control" name="case_type">
-                                                <option value="">select ...</option>
-                                                <option value="trade">تقرير جلسة </option>
-                                                <option value="commerce">مذكرة قضائية</option>
-                                                <option value="ta3weed">لائحة دعوى</option>
-                                                <option value="money"> تقرير اجتماع</option>
-                                                <option value="3ama"> meeting</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Follow up From Date</label>
-
-                                        <div class="col-md-3">
-
-                                              <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
-                                                    <input type="text" class="form-control" readonly name="meeting_date">
-                                                    <span class="input-group-btn">
-                                                        <button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
-                                                    </span>
-                                                </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-md-3">
-                                                <div class="input-icon">
-                                                    <i class="fa fa-clock-o"></i>
-                                                    <input name="meeting_time" type="text" class="form-control timepicker timepicker-default">
-                                                </div>
-                                                <span class="help-block">
-                                                    select a time </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Follow up To Date</label>
-
-                                        <div class="col-md-3">
-                                             <div class="input-group date date-picker" data-date-format="dd-mm-yyyy">
-                                                    <input type="text" class="form-control" readonly name="meeting_date">
-                                                    <span class="input-group-btn">
-                                                        <button class="btn default" type="button"><i class="fa fa-calendar"></i></button>
-                                                    </span>
-                                                </div>
-                                        </div>
-                                        <div class="form-group">
-
-                                            <div class="col-md-3">
-                                                <div class="input-icon">
-                                                    <i class="fa fa-clock-o"></i>
-                                                    <input name="meeting_time" type="text" class="form-control timepicker timepicker-default">
-                                                </div>
-                                                <span class="help-block">
-                                                    select a time </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Follow up Expenses</label>
-                                        <div class="col-md-4">
-                                            <input name="work_hour" type="text" class="form-control" />
-
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Follow up Descrption</label>
-                                        <div class="col-md-4">
-                                            <textarea name="work_hour"  class="form-control" ></textarea>
-
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-3">Follow up Note</label>
-                                        <div class="col-md-4">
-                                            <textarea name="work_hour"  class="form-control" ></textarea>
+                                            <input name="attachment" type="file" class="form-control" />
 
                                         </div>
                                     </div>
