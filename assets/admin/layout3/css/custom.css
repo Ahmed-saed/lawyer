@@ -17,3 +17,15 @@ Rounded Portlets
 	border-radius: 0px 0px 4px 4px !important;
 }
 */
+.login {
+    background-image: url('images/man-walking-up-supreme-court-steps.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+.lock-page {
+    background-image: url('images/opt-image-19.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
