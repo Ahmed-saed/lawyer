@@ -46,8 +46,8 @@ Author: Ahmed Saeed & Mohamed Sayed
     <!-- DOC: Apply "page-header-top-fixed" class to set the top menu fixed  -->
 
     <body>
-         
-           <!-- BEGIN HEADER -->
+
+        <!-- BEGIN HEADER -->
         <div class="page-header">
             <!-- BEGIN HEADER TOP -->
             <div class="page-header-top">
@@ -1266,7 +1266,7 @@ Author: Ahmed Saeed & Mohamed Sayed
             <!-- BEGIN PAGE CONTENT -->
             <div class="page-content">
                 <div class="container">
-     
+
                     <!-- BEGIN PAGE CONTENT INNER -->
                     <div class="row">
                         <div class="col-md-12">
@@ -1310,6 +1310,89 @@ Author: Ahmed Saeed & Mohamed Sayed
                                                     </div>
                                                     <div class="tab-pane active" id="tab1">
                                                         <h3 class="block">Provide your account details</h3>
+                                                        <div class="form-group">
+                                                            <label class="control-label col-md-3">Client Type <span class="required">
+                                                                    * </span>
+                                                            </label>
+                                                            <div class="col-md-4">
+                                                                <select class="form-control ClientChoose" name="">
+                                                                    <option value="personal">فردى</option>
+                                                                    <option value="company">شركات</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="orgnization" style="display: none">
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">Organization Name <span class="required">
+                                                                        * </span>
+                                                                </label>
+                                                                <div class="col-md-4">
+                                                                    <input type="text" class="form-control" name="username" />
+                                                                    <span class="help-block">
+                                                                        Provide your Organization Name </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">Registration # <span class="required">
+                                                                        * </span>
+                                                                </label>
+                                                                <div class="col-md-4">
+                                                                    <input type="text" class="form-control" name="username" />
+                                                                    <span class="help-block">
+                                                                        Provide your Registration # </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">Client Job Title <span class="required">
+                                                                        * </span>
+                                                                </label>
+                                                                <div class="col-md-4">
+                                                                    <input type="text" class="form-control" name="username" />
+                                                                    <span class="help-block">
+                                                                        Provide your job title </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">Organization Activity <span class="required">
+                                                                        * </span>
+                                                                </label>
+                                                                <div class="col-md-4">
+                                                                    <input type="text" class="form-control" name="username" />
+                                                                    <span class="help-block">
+                                                                        Provide your Organization Activity </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">Organization Address 
+                                                                </label>
+                                                                <div class="col-md-4">
+                                                                    <textarea  class="form-control" name="username"> </textarea>
+                                                                    <span class="help-block">
+                                                                        Provide your job title </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">Organization Phone <span class="required">
+                                                                        * </span>
+                                                                </label>
+                                                                <div class="col-md-4">
+                                                                    <input type="text" class="form-control" name="username" />
+                                                                    <span class="help-block">
+                                                                        Provide your Organization Phone </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label col-md-3">Organization Website <span class="required">
+                                                                        * </span>
+                                                                </label>
+                                                                <div class="col-md-4">
+                                                                    <input type="text" class="form-control" name="username" />
+                                                                    <span class="help-block">
+                                                                        Provide your Organization Website </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
                                                         <div class="form-group">
                                                             <label class="control-label col-md-3">Full name <span class="required">
                                                                     * </span>
@@ -1593,7 +1676,13 @@ Author: Ahmed Saeed & Mohamed Sayed
                 Demo.init(); // init demo features
                 FormWizard.init();
                 ComponentsPickers.init();
-
+                $('.ClientChoose').change(function () {
+                    if ($('.ClientChoose').val() == "company") {
+                        $('.orgnization').show(500);
+                    }else{
+                       $('.orgnization').hide(500); 
+                    }
+                });
             });
         </script>
         <!-- END JAVASCRIPTS -->
